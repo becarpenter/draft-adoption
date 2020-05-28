@@ -1,0 +1,162 @@
+---
+title: Process for Working Group Adoption of Drafts
+abbrev: Process for Adoption of Drafts
+docname: draft-carpenter-gendispatch-draft-adoption-00
+date: 2020
+
+# stand_alone: true
+
+ipr: trust200902
+area: General
+wg: Network Working Group
+kw: Internet-Draft
+cat: bcp
+#updates: 2418
+
+coding: us-ascii
+pi:
+  toc: yes
+  sortrefs:   # defaults to yes
+  symrefs: yes
+
+author:
+      -
+        ins: B. E. Carpenter
+        name: Brian E. Carpenter
+        org: The University of Auckland
+        abbrev: Univ. of Auckland
+        street: 
+        - School of Computer Science
+        - PB 92019
+        city: Auckland
+        code: 1142
+        country: New Zealand
+        email: brian.e.carpenter@gmail.com
+
+      -
+        ins: F. Gont
+        name: Fernando Gont
+        org: SI6 Networks
+        abbrev: SI6 Networks
+        street: Evaristo Carriego 2644
+        code: 1706
+        city: Haedo
+        region: Provincia de Buenos Aires
+        country: Argentina
+        email: fgont@si6networks.com
+        uri: https://www.si6networks.com         
+
+normative:
+  RFC2418:
+  RFC2026:
+  RFC5378:
+  RFC8179:
+
+informative:
+  RFC7221:
+
+--- abstract
+
+IETF working groups often formally adopt drafts. This document
+specifies minimum requirements for this process, thereby
+extending RFC 2418. It also describes how an adopted draft
+may be withdrawn from the working group process.
+
+--- middle
+
+# Introduction        {#intro}
+
+According to {{RFC2418}}, the Internet-Drafts (I-D) mechanism is a "resource for posting and disseminating in-process copies of working group documents." However, most I-Ds start as
+individual contributions and only become working group documents by a WG decision
+generally referred to as "adoption." As noted in {{RFC7221}}, this process was not
+previously documented as a formal step in the IETF WG process. This has sometimes
+led to confusion about the significance of such adoption and about how it
+fits into the IETF standards process. The present document is intended to define
+a few formal rules about adoption to reduce such confusion.
+
+# Consequences of WG Adoption of an Internet-Draft
+
+After a draft has been formally adopted by a WG, its original authors no longer have
+formal change control of the text. In addition to the normal consequence of posting
+a draft, i.e., that it becomes an IETF Contribution under {{RFC5378}}, all future
+substantive changes to the draft require WG consensus and are no longer at the authors'
+sole discretion.
+
+As a practical matter, the original authors usually continue to edit the document
+and make routine editorial decisions, but substantive changes must be referred to
+the WG and require WG rough consensus, consistently with {{RFC2418}}. It is
+also possible that new authors or editors will join the draft, or that previous
+authors may withdraw.
+
+Adoption represents a commitment that the WG will spend time and effort on the
+draft, but it does not guarantee that the draft will reach WG consensus and be
+submitted to the IESG for publication as an RFC.
+
+# Rules for Adoption of an Internet-Draft
+
+WG Adoption of an I-D is not a required step of the IETF standards process. It is legitimate for a draft to be submitted to the IESG as described in {{RFC2026}} without a formal adoption by a WG. However, if a WG chooses to use an adoption process, it must follow the following rules and it should consider the additional guidelines in {{RFC7221}}.
+
+- Any participant may request the adoption of a draft, after there has been a period of technical discussion of the draft in the WG.
+
+- WG Chairs have discretion about when to issue an adoption proposal, but they should do so regardless of their own opinions, when the WG discussion shows that there is clear interest
+in the draft in question.
+
+- A WG Chair or WG Secretary must send a formal proposal to adopt a draft to the WG mailing list with at least two weeks time to respond.
+
+- This proposal should remind all participants, not just the authors, of their obligation to disclose relevant intellectual property rights (IPR) under {{RFC8179}}.
+
+- Participants should consider the following aspects when responding to the proposal:
+
+    - The draft must fit within the current WG charter, or would do so with a simple modification to the charter.
+
+    - The purpose of the draft should be clear
+
+    - The proposal should be useful.
+
+    - The quality of writing should be sufficient for further work.
+
+    - There should be no strong technical objections.
+
+    - Any IPR disclosures should be acceptable.
+
+    - The work should not be in conflict with work elsewhere in the IETF.
+
+- An informal summary of these criteria is: Is this a problem the WG wants to
+solve in a way approximately as described in the draft?
+
+- After this period, a WG Chair must, in a timely fashion, consider the comments and discussion in order to judge whether there is rough consensus to adopt the draft, and whether there is enough interest in the work that its completion is likely.
+
+- If there is such consensus, this WG Chair will announce the result and, if positive, will
+request the authors to post a new version using an appropriate naming convention.
+
+- This whole process is subject to the appeals process of {{RFC2026}}.
+
+# Withdrawal of an Adopted Internet-Draft
+
+It sometimes happens that an adopted draft does not progress to WG Last Call due to
+lack of interest, lack of effort, or lack of consensus. In such a case, the draft
+should be explicitly removed from the WG's agenda and returned to the authors'
+control. Details TBD.
+
+# IANA Considerations
+
+This document makes no request of IANA.
+
+# Security Considerations
+
+This document should not affect the security of the Internet.
+
+# Acknowledgements
+
+Useful comments were received from Michael Richardson, ...
+
+--- back
+
+# Change Log
+
+## Draft-00
+
+- Original version
+
+
+
