@@ -96,24 +96,24 @@ submitted to the IESG for publication as an RFC.
 
 WG Adoption of an I-D is not a required step of the IETF standards process. It is legitimate for a draft to be submitted to the IESG as described in {{RFC2026}} without a formal adoption by a WG. However, if a WG chooses to use an adoption process, it must follow the following rules and it should consider the additional guidelines in {{RFC7221}}.
 
-- Any participant may request the adoption of a draft, after there has been a period of technical discussion of the draft in the WG.
+- Any participant may request the adoption of a draft, after there has been a period of technical discussion of the draft in the relevant WG.
 
-- WG Chairs have discretion about when to issue an adoption proposal, but they should do so regardless of their own opinions, when the WG discussion shows that there is clear interest
+- WG Chairs have discretion about when to issue an WG call for adoption, but they should do so regardless of their own opinions, when the WG discussion shows that there is clear interest
 in the draft in question.
 
-- A WG Chair or WG Secretary must send a formal proposal to adopt a draft to the WG mailing list with at least two weeks time to respond.
+- A WG Chair or WG Secretary must send a formal WG call for adoption of a draft to the WG mailing list with at least two weeks time to respond.
 
 - This proposal should remind all participants, not just the authors, of their obligation to disclose relevant intellectual property rights (IPR) under {{RFC8179}}.
 
-- Participants should consider the following aspects when responding to the proposal:
+- Participants should consider the following aspects when responding to the WG call for adoption:
 
     - The draft must fit within the current WG charter, or would do so with a simple modification to the charter.
 
-    - The purpose of the draft should be clear
+    - The purpose of the draft should be clear.
 
     - The proposal should be useful.
 
-    - The quality of writing should be sufficient for further work.
+    - The quality of writing should be sufficient for document to serve as the basis further work.
 
     - There should be no strong technical objections.
 
@@ -133,10 +133,25 @@ request the authors to post a new version using an appropriate naming convention
 
 # Withdrawal of an Adopted Internet-Draft
 
-It sometimes happens that an adopted draft does not progress to WG Last Call due to
-lack of interest, lack of effort, or lack of consensus. In such a case, the draft
-should be explicitly removed from the WG's agenda and returned to the authors'
-control. Details TBD.
+It sometimes happens that an adopted draft does not progress to WG Last Call due to lack of interest, lack of effort, or lack of consensus. In such a case, it may be desirable for the WG to formally withdraw the WG draft, such that it is explicitly removed from the WG's agenda and returned to the authors' control.
+
+The withdrawal of WG document should be the result of an explicit decision by the relevant WG, and should follow the following recommendations.
+
+- Upon evidence that progress on a WG draft has been stalled for a considerable period of time, a WG chair should evaluate the reasons of the apparent lack of progress. Such reasons may may include lack of interest, lack of effort, or lack of consensus.
+
+- When progress on a document has been stalled for a considerable period of time, a WG chair, in consultation with the WG draft authors and editors, should attempt to resume progress by taking appropriate actions that will normally depend on the nature of the lack of progress. For example, a WG draft that has been stalled due to apparent lack of interest may benefit from a call for a number of volunters to produce detailed reviews of the WG draft. Similarly, a WG draft that has been stalled due to lack of effort by its authors/editors may benefit from the incorporation of new WG draft editors or the replacement of some of of the existing ones. 
+
+- If after succesive failed attempts to make progress on a WG draft its completion remains unlikely, the WG Chairs may, at their own discretion, conclude that it is time for the WG to consider the formal withdrawal of the WG draft.
+
+- In such case, a WG Chair or WG Secretary must send a formal WG consensus call for withdrawal of the WG draft to the WG mailing list with at least two weeks time to respond, explaining the events that have triggered the aforementioned consensus call.
+
+- After this period, a WG Chair must, in a timely fashion, consider the comments and discussion in order to judge whether there is any concrete evidence that completion of the work may now be feasible, or whether completion of the work remains unlikely.
+
+- If further progress on the document remains unlikely, the WG Chair will announce the result of the consensus call and the formal withdrawal of the WG document. This will result in the document being removed from the WG's agenda and returned to the authors' control.
+
+- This whole process is subject to the appeals process of {{RFC2026}}.
+
+
 
 # IANA Considerations
 
