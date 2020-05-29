@@ -101,7 +101,19 @@ submitted to the IESG for publication as an RFC.
 
 # Rules for Adoption of an Internet-Draft
 
-WG Adoption of an I-D is not a required step of the IETF standards process. It is legitimate for a draft to be submitted to the IESG as described in {{RFC2026}} without a formal adoption by a WG. However, if a WG chooses to use an adoption process, it must follow the following rules and it should consider the additional guidelines in {{RFC7221}}.
+A WG Adoption Call of an I-D is not a required step of the IETF standards process.
+The WG chairs decide what documents belong in the WG, and can create new documents by fiat.
+A simple situation would be if a WG decides that an existing document should be split into two pieces:
+There is no reason to adopt each piece, that is needless bureaucracy.
+A WG that decides to create a design team to solve a problem has implicitely agreed to adopt the result.
+To not adopt the result is to say that the results of the WG mandated design team does not deserve first class agenda time.
+Such a design team would have been created, for instance, when a WG can not decide between two competing individual drafts and decides to merge them.
+
+It is legitimate for a draft to be submitted to the IESG as described in {{RFC2026}} without a formal adoption by a WG.
+
+If WG Chairs choose to consult the WG about adopting a document, this is the recommended process.
+The WG Chairs should also consider the additional guidelines in {{RFC7221}}.
+
 
 - Any participant may request the adoption of a draft, after there has been a period of technical discussion of the draft in the relevant WG.
 
