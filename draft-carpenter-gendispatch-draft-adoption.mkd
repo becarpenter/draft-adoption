@@ -44,7 +44,14 @@ author:
         region: Provincia de Buenos Aires
         country: Argentina
         email: fgont@si6networks.com
-        uri: https://www.si6networks.com         
+        uri: https://www.si6networks.com
+
+      -
+        ins: M. Richardson
+        name: Michael Richardson
+        org: Sandelman Software Works
+        email: mcr+ietf@sandelman.ca
+        uri: https://www.sandelman.ca/mcr/
 
 normative:
   RFC2418:
