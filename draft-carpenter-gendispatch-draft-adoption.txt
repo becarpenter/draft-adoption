@@ -2,13 +2,13 @@
 
 
 
-Network Working Group                                     B.E. Carpenter
+Network Working Group                                       B. Carpenter
 Internet-Draft                                         Univ. of Auckland
 Intended status: Best Current Practice                           F. Gont
-Expires: 1 December 2020                                    SI6 Networks
+Expires: December 1, 2020                                   SI6 Networks
                                                            M. Richardson
                                                 Sandelman Software Works
-                                                             30 May 2020
+                                                            May 30, 2020
 
 
               Process for Working Group Adoption of Drafts
@@ -36,36 +36,30 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 1 December 2020.
+   This Internet-Draft will expire on December 1, 2020.
 
 Copyright Notice
 
    Copyright (c) 2020 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (https://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
 
 
 
-
-
-
-
-
-
-
-Carpenter, et al.        Expires 1 December 2020                [Page 1]
+Carpenter, et al.       Expires December 1, 2020                [Page 1]
 
 Internet-Draft       Process for Adoption of Drafts             May 2020
 
 
-   This document is subject to BCP 78 and the IETF Trust's Legal
-   Provisions Relating to IETF Documents (https://trustee.ietf.org/
-   license-info) in effect on the date of publication of this document.
-   Please review these documents carefully, as they describe your rights
-   and restrictions with respect to this document.  Code Components
-   extracted from this document must include Simplified BSD License text
-   as described in Section 4.e of the Trust Legal Provisions and are
-   provided without warranty as described in the Simplified BSD License.
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
 
 Table of Contents
 
@@ -75,7 +69,7 @@ Table of Contents
    4.  Withdrawal of an Adopted Internet-Draft . . . . . . . . . . .   4
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    6.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
-   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   6
+   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   5
    8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   6
      8.1.  Normative References  . . . . . . . . . . . . . . . . . .   6
      8.2.  Informative References  . . . . . . . . . . . . . . . . .   6
@@ -105,20 +99,20 @@ Table of Contents
    draft require WG consensus and are no longer at the authors' sole
    discretion.
 
-
-
-
-
-Carpenter, et al.        Expires 1 December 2020                [Page 2]
-
-Internet-Draft       Process for Adoption of Drafts             May 2020
-
-
    As a practical matter, the original authors usually continue to edit
    the document and make routine editorial decisions, but substantive
    changes must be referred to the WG and require WG rough consensus,
    consistently with [RFC2418].  It is also possible that new authors or
    editors will join the draft, or that previous authors may withdraw.
+
+
+
+
+
+Carpenter, et al.       Expires December 1, 2020                [Page 2]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
 
    Adoption represents a commitment that the WG will spend time and
    effort on the draft, but it does not guarantee that the draft will
@@ -146,93 +140,92 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
    is the recommended process.  The WG Chairs should also consider the
    additional guidelines in [RFC7221].
 
-   *  Any participant may request the adoption of a draft, after there
+   o  Any participant may request the adoption of a draft, after there
       has been a period of technical discussion of the draft in the
       relevant WG.
 
-   *  WG Chairs have discretion about when to issue an WG call for
+   o  WG Chairs have discretion about when to issue an WG call for
       adoption, but they should do so regardless of their own opinions,
       when the WG discussion shows that there is clear interest in the
       draft in question.
 
-   *  A WG Chair or WG Secretary must send a formal WG call for adoption
+   o  A WG Chair or WG Secretary must send a formal WG call for adoption
       of a draft to the WG mailing list with at least two weeks time to
       respond.
 
-   *  This proposal should remind all participants, not just the
+   o  This proposal should remind all participants, not just the
       authors, of their obligation to disclose relevant intellectual
       property rights (IPR) under [RFC8179].
 
+   o  Participants should consider the following aspects when responding
+      to the WG call for adoption:
+
+      *  The draft must fit within the current WG charter, or would do
+         so with a simple modification to the charter.
 
 
-Carpenter, et al.        Expires 1 December 2020                [Page 3]
+
+Carpenter, et al.       Expires December 1, 2020                [Page 3]
 
 Internet-Draft       Process for Adoption of Drafts             May 2020
 
 
-   *  Participants should consider the following aspects when responding
-      to the WG call for adoption:
+      *  The purpose of the draft should be clear.
 
-      -  The draft must fit within the current WG charter, or would do
-         so with a simple modification to the charter.
+      *  The proposal should be useful.
 
-      -  The purpose of the draft should be clear.
-
-      -  The proposal should be useful.
-
-      -  The quality of writing should be sufficient for document to
+      *  The quality of writing should be sufficient for document to
          serve as the basis further work.
 
-      -  There should be no strong technical objections.
+      *  There should be no strong technical objections.
 
-      -  Any IPR disclosures should be acceptable.
+      *  Any IPR disclosures should be acceptable.
 
-      -  The work should not be in conflict with work elsewhere in the
+      *  The work should not be in conflict with work elsewhere in the
          IETF.
 
-   *  An informal summary of these criteria is: Is this a problem the WG
+   o  An informal summary of these criteria is: Is this a problem the WG
       wants to solve in a way approximately as described in the draft?
 
-   *  After this period, a WG Chair must, in a timely fashion, consider
+   o  After this period, a WG Chair must, in a timely fashion, consider
       the comments and discussion in order to judge whether there is
       rough consensus to adopt the draft, and whether there is enough
       interest in the work that its completion is likely.
 
-   *  If there is such consensus, this WG Chair will announce the result
+   o  If there is such consensus, this WG Chair will announce the result
       and, if positive, will request the authors to post a new version
       using an appropriate naming convention.
 
-   *  This whole process is subject to the appeals process of [RFC2026].
+   o  This whole process is subject to the appeals process of [RFC2026].
 
 4.  Withdrawal of an Adopted Internet-Draft
 
-   It sometimes happens that an adopted draft does not progress to WG
-   Last Call due to lack of interest, lack of effort, or lack of
-   consensus.  In such a case, it may be desirable for the WG to
-   formally withdraw the WG draft, such that it is explicitly removed
-   from the WG's agenda and returned to the authors' control.
+   It sometimes happens that an adopted draft does not reach WG
+   consensus to be submitted to the IESG for publication as an RFC due
+   to lack of interest, lack of effort, or lack of consensus.  In such a
+   case, it may be desirable for the WG to formally withdraw the WG
+   draft, such that it is explicitly removed from the WG's agenda and
+   returned to the authors' control.
 
    The withdrawal of WG document should be the result of an explicit
    decision by the relevant WG, and should follow the following
    recommendations.
 
-
-
-
-
-
-Carpenter, et al.        Expires 1 December 2020                [Page 4]
-
-Internet-Draft       Process for Adoption of Drafts             May 2020
-
-
-   *  Upon evidence that progress on a WG draft has been stalled for a
+   o  Upon evidence that progress on a WG draft has been stalled for a
       considerable period of time, a WG chair should evaluate the
       reasons of the apparent lack of progress.  Such reasons may may
       include lack of interest, lack of effort, or lack of consensus.
 
-   *  When progress on a document has been stalled for a considerable
+   o  When progress on a document has been stalled for a considerable
       period of time, a WG chair, in consultation with the WG draft
+
+
+
+Carpenter, et al.       Expires December 1, 2020                [Page 4]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
+
       authors and editors, should attempt to resume progress by taking
       appropriate actions that will normally depend on the nature of the
       lack of progress.  For example, a WG draft that has been stalled
@@ -240,31 +233,30 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
       number of volunters to produce detailed reviews of the WG draft.
       Similarly, a WG draft that has been stalled due to lack of effort
       by its authors/editors may benefit from the incorporation of new
-      WG draft editors or the replacement of some of of the existing
-      ones.
+      WG draft editors or the replacement of some of the existing ones.
 
-   *  If after succesive failed attempts to make progress on a WG draft
+   o  If after succesive failed attempts to make progress on a WG draft
       its completion remains unlikely, the WG Chairs may, at their own
       discretion, conclude that it is time for the WG to consider the
       formal withdrawal of the WG draft.
 
-   *  In such case, a WG Chair or WG Secretary must send a formal WG
+   o  In such case, a WG Chair or WG Secretary must send a formal WG
       consensus call for withdrawal of the WG draft to the WG mailing
       list with at least two weeks time to respond, explaining the
       events that have triggered the aforementioned consensus call.
 
-   *  After this period, a WG Chair must, in a timely fashion, consider
+   o  After this period, a WG Chair must, in a timely fashion, consider
       the comments and discussion in order to judge whether there is any
       concrete evidence that completion of the work may now be feasible,
       or whether completion of the work remains unlikely.
 
-   *  If further progress on the document remains unlikely, the WG Chair
+   o  If further progress on the document remains unlikely, the WG Chair
       will announce the result of the consensus call and the formal
       withdrawal of the WG document.  This will result in the document
       being removed from the WG's agenda and returned to the authors'
       control.
 
-   *  This whole process is subject to the appeals process of [RFC2026].
+   o  This whole process is subject to the appeals process of [RFC2026].
 
 5.  IANA Considerations
 
@@ -274,17 +266,21 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
 
    This document should not affect the security of the Internet.
 
+7.  Acknowledgements
+
+   Useful comments were received from [TBD] ...
 
 
 
-Carpenter, et al.        Expires 1 December 2020                [Page 5]
+
+
+
+
+
+Carpenter, et al.       Expires December 1, 2020                [Page 5]
 
 Internet-Draft       Process for Adoption of Drafts             May 2020
 
-
-7.  Acknowledgements
-
-   Useful comments were received from Michael Richardson, ...
 
 8.  References
 
@@ -319,7 +315,7 @@ Appendix A.  Change Log
 
 A.1.  Draft-00
 
-   *  Original version
+   o  Original version
 
 Authors' Addresses
 
@@ -327,25 +323,25 @@ Authors' Addresses
    The University of Auckland
    School of Computer Science
    PB 92019
-   Auckland 1142
+   Auckland  1142
    New Zealand
 
+   Email: brian.e.carpenter@gmail.com
 
 
 
-Carpenter, et al.        Expires 1 December 2020                [Page 6]
+
+
+
+Carpenter, et al.       Expires December 1, 2020                [Page 6]
 
 Internet-Draft       Process for Adoption of Drafts             May 2020
-
-
-   Email: brian.e.carpenter@gmail.com
 
 
    Fernando Gont
    SI6 Networks
    Evaristo Carriego 2644
-   1706 Haedo
-   Provincia de Buenos Aires
+   Haedo, Provincia de Buenos Aires  1706
    Argentina
 
    Email: fgont@si6networks.com
@@ -389,4 +385,8 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
 
 
 
-Carpenter, et al.        Expires 1 December 2020                [Page 7]
+
+
+
+
+Carpenter, et al.       Expires December 1, 2020                [Page 7]

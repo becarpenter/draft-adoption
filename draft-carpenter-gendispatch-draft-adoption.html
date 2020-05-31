@@ -1,1482 +1,672 @@
-<!DOCTYPE html>
-<html lang="en" class="Internet-Draft">
-<head>
-<meta charset="utf-8">
-<meta content="Common,Latin" name="scripts">
-<meta content="initial-scale=1.0" name="viewport">
-<title>Process for Working Group Adoption of Drafts</title>
-<meta content="Brian E. Carpenter" name="author">
-<meta content="Fernando Gont" name="author">
-<meta content="
-       IETF working groups often formally adopt drafts. This document
-specifies minimum requirements for this process, thereby
-extending RFC 2418. It also describes how an adopted draft
-may be withdrawn from the working group process. 
-    " name="description">
-<meta content="xml2rfc 2.45.0" name="generator">
-<meta content="Internet-Draft" name="keyword">
-<meta content="draft-carpenter-gendispatch-draft-adoption-00" name="ietf.draft">
-<link href="/var/tmp/CGItemp7852.dir/draft-carpenter-gendispatch-draft-adoption.mkd-2.xml" type="application/rfc+xml" rel="alternate">
-<link href="#copyright" rel="license">
-<style type="text/css">/*
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+  <title>Process for Working Group Adoption of Drafts</title>
+
+  <style type="text/css" title="Xml2Rfc (sans serif)">
+  /*<![CDATA[*/
+	  a {
+	  text-decoration: none;
+	  }
+      /* info code from SantaKlauss at http://www.madaboutstyle.com/tooltip2.html */
+      a.info {
+          /* This is the key. */
+          position: relative;
+          z-index: 24;
+          text-decoration: none;
+      }
+      a.info:hover {
+          z-index: 25;
+          color: #FFF; background-color: #900;
+      }
+      a.info span { display: none; }
+      a.info:hover span.info {
+          /* The span will display just on :hover state. */
+          display: block;
+          position: absolute;
+          font-size: smaller;
+          top: 2em; left: -5em; width: 15em;
+          padding: 2px; border: 1px solid #333;
+          color: #900; background-color: #EEE;
+          text-align: left;
+      }
+	  a.smpl {
+	  color: black;
+	  }
+	  a:hover {
+	  text-decoration: underline;
+	  }
+	  a:active {
+	  text-decoration: underline;
+	  }
+	  address {
+	  margin-top: 1em;
+	  margin-left: 2em;
+	  font-style: normal;
+	  }
+	  body {
+	  color: black;
+	  font-family: verdana, helvetica, arial, sans-serif;
+	  font-size: 10pt;
+	  max-width: 55em;
+	  
+	  }
+	  cite {
+	  font-style: normal;
+	  }
+	  dd {
+	  margin-right: 2em;
+	  }
+	  dl {
+	  margin-left: 2em;
+	  }
+	
+	  ul.empty {
+	  list-style-type: none;
+	  }
+	  ul.empty li {
+	  margin-top: .5em;
+	  }
+	  dl p {
+	  margin-left: 0em;
+	  }
+	  dt {
+	  margin-top: .5em;
+	  }
+	  h1 {
+	  font-size: 14pt;
+	  line-height: 21pt;
+	  page-break-after: avoid;
+	  }
+	  h1.np {
+	  page-break-before: always;
+	  }
+	  h1 a {
+	  color: #333333;
+	  }
+	  h2 {
+	  font-size: 12pt;
+	  line-height: 15pt;
+	  page-break-after: avoid;
+	  }
+	  h3, h4, h5, h6 {
+	  font-size: 10pt;
+	  page-break-after: avoid;
+	  }
+	  h2 a, h3 a, h4 a, h5 a, h6 a {
+	  color: black;
+	  }
+	  img {
+	  margin-left: 3em;
+	  }
+	  li {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol p {
+	  margin-left: 0em;
+	  }
+	  p {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  pre {
+	  margin-left: 3em;
+	  background-color: lightyellow;
+	  padding: .25em;
+	  }
+	  pre.text2 {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f0f0f0;
+	  width: 69em;
+	  }
+	  pre.inline {
+	  background-color: white;
+	  padding: 0em;
+	  }
+	  pre.text {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  width: 69em;
+	  }
+	  pre.drawing {
+	  border-style: solid;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  padding: 2em;
+	  }
+	  table {
+	  margin-left: 2em;
+	  }
+	  table.tt {
+	  vertical-align: top;
+	  }
+	  table.full {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.headers {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.tt td {
+	  vertical-align: top;
+	  }
+	  table.full td {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.tt th {
+	  vertical-align: top;
+	  }
+	  table.full th {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.headers th {
+	  border-style: none none inset none;
+	  border-width: 1px;
+	  }
+	  table.left {
+	  margin-right: auto;
+	  }
+	  table.right {
+	  margin-left: auto;
+	  }
+	  table.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	  }
+	  caption {
+	  caption-side: bottom;
+	  font-weight: bold;
+	  font-size: 9pt;
+	  margin-top: .5em;
+	  }
+	
+	  table.header {
+	  border-spacing: 1px;
+	  width: 95%;
+	  font-size: 10pt;
+	  color: white;
+	  }
+	  td.top {
+	  vertical-align: top;
+	  }
+	  td.topnowrap {
+	  vertical-align: top;
+	  white-space: nowrap; 
+	  }
+	  table.header td {
+	  background-color: gray;
+	  width: 50%;
+	  }
+	  table.header a {
+	  color: white;
+	  }
+	  td.reference {
+	  vertical-align: top;
+	  white-space: nowrap;
+	  padding-right: 1em;
+	  }
+	  thead {
+	  display:table-header-group;
+	  }
+	  ul.toc, ul.toc ul {
+	  list-style: none;
+	  margin-left: 1.5em;
+	  margin-right: 0em;
+	  padding-left: 0em;
+	  }
+	  ul.toc li {
+	  line-height: 150%;
+	  font-weight: bold;
+	  font-size: 10pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  ul.toc li li {
+	  line-height: normal;
+	  font-weight: normal;
+	  font-size: 9pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  li.excluded {
+	  font-size: 0pt;
+	  }
+	  ul p {
+	  margin-left: 0em;
+	  }
+	
+	  .comment {
+	  background-color: yellow;
+	  }
+	  .center {
+	  text-align: center;
+	  }
+	  .error {
+	  color: red;
+	  font-style: italic;
+	  font-weight: bold;
+	  }
+	  .figure {
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 9pt;
+	  }
+	  .filename {
+	  color: #333333;
+	  font-weight: bold;
+	  font-size: 12pt;
+	  line-height: 21pt;
+	  text-align: center;
+	  }
+	  .fn {
+	  font-weight: bold;
+	  }
+	  .hidden {
+	  display: none;
+	  }
+	  .left {
+	  text-align: left;
+	  }
+	  .right {
+	  text-align: right;
+	  }
+	  .title {
+	  color: #990000;
+	  font-size: 18pt;
+	  line-height: 18pt;
+	  font-weight: bold;
+	  text-align: center;
+	  margin-top: 36pt;
+	  }
+	  .vcardline {
+	  display: block;
+	  }
+	  .warning {
+	  font-size: 14pt;
+	  background-color: yellow;
+	  }
+	
+	
+	  @media print {
+	  .noprint {
+		display: none;
+	  }
+	
+	  a {
+		color: black;
+		text-decoration: none;
+	  }
+	
+	  table.header {
+		width: 90%;
+	  }
+	
+	  td.header {
+		width: 50%;
+		color: black;
+		background-color: white;
+		vertical-align: top;
+		font-size: 12pt;
+	  }
+	
+	  ul.toc a::after {
+		content: leader('.') target-counter(attr(href), page);
+	  }
+	
+	  ul.ind li li a {
+		content: target-counter(attr(href), page);
+	  }
+	
+	  .print2col {
+		column-count: 2;
+		-moz-column-count: 2;
+		column-fill: auto;
+	  }
+	  }
+	
+	  @page {
+	  @top-left {
+		   content: "Internet-Draft"; 
+	  } 
+	  @top-right {
+		   content: "December 2010"; 
+	  } 
+	  @top-center {
+		   content: "Abbreviated Title";
+	  } 
+	  @bottom-left {
+		   content: "Doe"; 
+	  } 
+	  @bottom-center {
+		   content: "Expires June 2011"; 
+	  } 
+	  @bottom-right {
+		   content: "[Page " counter(page) "]"; 
+	  } 
+	  }
+	
+	  @page:first { 
+		@top-left {
+		  content: normal;
+		}
+		@top-right {
+		  content: normal;
+		}
+		@top-center {
+		  content: normal;
+		}
+	  }
+  /*]]>*/
+  </style>
+
+  <link href="#rfc.toc" rel="Contents">
+<link href="#rfc.section.1" rel="Chapter" title="1 Introduction">
+<link href="#rfc.section.2" rel="Chapter" title="2 Consequences of WG Adoption of an Internet-Draft">
+<link href="#rfc.section.3" rel="Chapter" title="3 Rules for Adoption of an Internet-Draft">
+<link href="#rfc.section.4" rel="Chapter" title="4 Withdrawal of an Adopted Internet-Draft">
+<link href="#rfc.section.5" rel="Chapter" title="5 IANA Considerations">
+<link href="#rfc.section.6" rel="Chapter" title="6 Security Considerations">
+<link href="#rfc.section.7" rel="Chapter" title="7 Acknowledgements">
+<link href="#rfc.references" rel="Chapter" title="8 References">
+<link href="#rfc.references.1" rel="Chapter" title="8.1 Normative References">
+<link href="#rfc.references.2" rel="Chapter" title="8.2 Informative References">
+<link href="#rfc.appendix.A" rel="Chapter" title="A Change Log">
+<link href="#rfc.appendix.A.1" rel="Chapter" title="A.1 Draft-00">
+<link href="#rfc.authors" rel="Chapter">
+
+
+  <meta name="generator" content="xml2rfc version 2.45.1 - https://tools.ietf.org/tools/xml2rfc" />
+  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+
+  <meta name="dct.creator" content="Carpenter, B., Gont, F., and M. Richardson" />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-carpenter-gendispatch-draft-adoption-00" />
+  <meta name="dct.issued" scheme="ISO8601" content="2020-30" />
+  <meta name="dct.abstract" content="IETF working groups often formally adopt drafts. This document specifies minimum requirements for this process, thereby extending RFC 2418. It also describes how an adopted draft may be withdrawn from the working group process. " />
+  <meta name="description" content="IETF working groups often formally adopt drafts. This document specifies minimum requirements for this process, thereby extending RFC 2418. It also describes how an adopted draft may be withdrawn from the working group process. " />
 
-  NOTE: Changes at the bottom of this file overrides some earlier settings.
-
-  Once the style has stabilized and has been adopted as an official RFC style,
-  this can be consolidated so that style settings occur only in one place, but
-  for now the contents of this file consists first of the initial CSS work as
-  provided to the RFC Formatter (xml2rfc) work, followed by itemized and
-  commented changes found necssary during the development of the v3
-  formatters.
-
-*/
-
-/* fonts */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans'); /* Sans-serif */
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif'); /* Serif (print) */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono'); /* Monospace */
-
-@viewport {
-  zoom: 1.0;
-  width: extend-to-zoom;
-}
-@-ms-viewport {
-  width: extend-to-zoom;
-  zoom: 1.0;
-}
-/* general and mobile first */
-html {
-}
-body {
-  max-width: 90%;
-  margin: 1.5em auto;
-  color: #222;
-  background-color: #fff;
-  font-size: 14px;
-  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-.ears {
-  display: none;
-}
-
-/* headings */
-#title, h1, h2, h3, h4, h5, h6 {
-  margin: 1em 0 0.5em;
-  font-weight: bold;
-  line-height: 1.3;
-}
-#title {
-  clear: both;
-  border-bottom: 1px solid #ddd;
-  margin: 0 0 0.5em 0;
-  padding: 1em 0 0.5em;
-}
-.author {
-  padding-bottom: 4px;
-}
-h1 {
-  font-size: 26px;
-  margin: 1em 0;
-}
-h2 {
-  font-size: 22px;
-  margin-top: -20px;  /* provide offset for in-page anchors */
-  padding-top: 33px;
-}
-h3 {
-  font-size: 18px;
-  margin-top: -36px;  /* provide offset for in-page anchors */
-  padding-top: 42px;
-}
-h4 {
-  font-size: 16px;
-  margin-top: -36px;  /* provide offset for in-page anchors */
-  padding-top: 42px;
-}
-h5, h6 {
-  font-size: 14px;
-}
-#n-copyright-notice {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-}
-/* general structure */
-p {
-  padding: 0;
-  margin: 0 0 1em 0;
-  text-align: left;
-}
-div, span {
-  position: relative;
-}
-div {
-  margin: 0;
-}
-.alignRight.art-text {
-  background-color: #f9f9f9;
-  border: 1px solid #eee;
-  border-radius: 3px;
-  padding: 1em 1em 0;
-  margin-bottom: 1.5em;
-}
-.alignRight.art-text pre {
-  padding: 0;
-}
-.alignRight {
-  margin: 1em 0;
-}
-.alignRight > *:first-child {
-  border: none;
-  margin: 0;
-  float: right;
-  clear: both;
-}
-.alignRight > *:nth-child(2) {
-  clear: both;
-  display: block;
-  border: none;
-}
-svg {
-  display: block;
-}
-.alignCenter.art-text {
-  background-color: #f9f9f9;
-  border: 1px solid #eee;
-  border-radius: 3px;
-  padding: 1em 1em 0;
-  margin-bottom: 1.5em;
-}
-.alignCenter.art-text pre {
-  padding: 0;
-}
-.alignCenter {
-  margin: 1em 0;
-}
-.alignCenter > *:first-child {
-  border: none;
-  /* this isn't optimal, but it's an existence proof.  PrinceXML doesn't
-     support flexbox yet.
-  */
-  display: table;
-  margin: 0 auto;
-}
-
-/* lists */
-ol, ul {
-  padding: 0;
-  margin: 0 0 1em 2em;
-}
-ol ol, ul ul, ol ul, ul ol {
-  margin-left: 1em;
-}
-li {
-  margin: 0 0 0.25em 0;
-}
-.ulCompact li {
-  margin: 0;
-}
-ul.empty, .ulEmpty {
-  list-style-type: none;
-}
-ul.empty li, .ulEmpty li {
-  margin-top: 0.5em;
-}
-ul.compact, .ulCompact,
-ol.compact, .olCompact {
-  line-height: 100%;
-  margin: 0 0 0 2em;
-}
-
-/* definition lists */
-dl {
-}
-dl > dt {
-  float: left;
-  margin-right: 1em;
-}
-/* 
-dl.nohang > dt {
-  float: none;
-}
-*/
-dl > dd {
-  margin-bottom: .8em;
-  min-height: 1.3em;
-}
-dl.compact > dd, .dlCompact > dd {
-  margin-bottom: 0em;
-}
-dl > dd > dl {
-  margin-top: 0.5em;
-  margin-bottom: 0em;
-}
-
-/* links */
-a {
-  text-decoration: none;
-}
-a[href] {
-  color: #22e; /* Arlen: WCAG 2019 */
-}
-a[href]:hover {
-  background-color: #f2f2f2;
-}
-figcaption a[href],
-a[href].selfRef {
-  color: #222;
-}
-/* XXX probably not this:
-a.selfRef:hover {
-  background-color: transparent;
-  cursor: default;
-} */
-
-/* Figures */
-tt, code, pre, code {
-  background-color: #f9f9f9;
-  font-family: 'Roboto Mono', monospace;
-}
-pre {
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 1em;
-}
-img {
-  max-width: 100%;
-}
-figure {
-  margin: 0;
-}
-figure blockquote {
-  margin: 0.8em 0.4em 0.4em;
-}
-figcaption {
-  font-style: italic;
-  margin: 0 0 1em 0;
-}
-@media screen {
-  pre {
-    overflow-x: auto;
-    max-width: 100%;
-    max-width: calc(100% - 22px);
-  }
-}
-
-/* aside, blockquote */
-aside, blockquote {
-  margin-left: 0;
-  padding: 1.2em 2em;
-}
-blockquote {
-  background-color: #f9f9f9;
-  color: #111; /* Arlen: WCAG 2019 */
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  margin: 1em 0;
-}
-cite {
-  display: block;
-  text-align: right;
-  font-style: italic;
-}
-
-/* tables */
-table {
-  width: 100%;
-  margin: 0 0 1em;
-  border-collapse: collapse;
-  border: 1px solid #eee;
-}
-th, td {
-  text-align: left;
-  vertical-align: top;
-  padding: 0.5em 0.75em;
-}
-th {
-  text-align: left;
-  background-color: #e9e9e9;
-}
-tr:nth-child(2n+1) > td {
-  background-color: #f5f5f5;
-}
-table caption {
-  font-style: italic;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-table p {
-  /* XXX to avoid bottom margin on table row signifiers. If paragraphs should
-     be allowed within tables more generally, it would be far better to select on a class. */
-  margin: 0;
-}
-
-/* pilcrow */
-a.pilcrow {
-  color: #666; /* Arlen: AHDJ 2019 */
-  text-decoration: none;
-  visibility: hidden;
-  user-select: none;
-  -ms-user-select: none;
-  -o-user-select:none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-@media screen {
-  aside:hover > a.pilcrow,
-  p:hover > a.pilcrow,
-  blockquote:hover > a.pilcrow,
-  div:hover > a.pilcrow,
-  li:hover > a.pilcrow,
-  pre:hover > a.pilcrow {
-    visibility: visible;
-  }
-  a.pilcrow:hover {
-    background-color: transparent;
-  }
-}
-
-/* misc */
-hr {
-  border: 0;
-  border-top: 1px solid #eee;
-}
-.bcp14 {
-  font-variant: small-caps;
-}
-
-.role {
-  font-variant: all-small-caps;
-}
-
-/* info block */
-#identifiers {
-  margin: 0;
-  font-size: 0.9em;
-}
-#identifiers dt {
-  width: 3em;
-  clear: left;
-}
-#identifiers dd {
-  float: left;
-  margin-bottom: 0;
-}
-#identifiers .authors .author {
-  display: inline-block;
-  margin-right: 1.5em;
-}
-#identifiers .authors .org {
-  font-style: italic;
-}
-
-/* The prepared/rendered info at the very bottom of the page */
-.docInfo {
-  color: #666; /* Arlen: WCAG 2019 */
-  font-size: 0.9em;
-  font-style: italic;
-  margin-top: 2em;
-}
-.docInfo .prepared {
-  float: left;
-}
-.docInfo .prepared {
-  float: right;
-}
-
-/* table of contents */
-#toc  {
-  padding: 0.75em 0 2em 0;
-  margin-bottom: 1em;
-}
-nav.toc ul {
-  margin: 0 0.5em 0 0;
-  padding: 0;
-  list-style: none;
-}
-nav.toc li {
-  line-height: 1.3em;
-  margin: 0.75em 0;
-  padding-left: 1.2em;
-  text-indent: -1.2em;
-}
-/* references */
-.references dt {
-  text-align: right;
-  font-weight: bold;
-  min-width: 7em;
-}
-.references dd {
-  margin-left: 8em;
-  overflow: auto;
-}
-
-.refInstance {
-  margin-bottom: 1.25em;
-}
-
-.references .ascii {
-  margin-bottom: 0.25em;
-}
-
-/* index */
-.index ul {
-  margin: 0 0 0 1em;
-  padding: 0;
-  list-style: none;
-}
-.index ul ul {
-  margin: 0;
-}
-.index li {
-  margin: 0;
-  text-indent: -2em;
-  padding-left: 2em;
-  padding-bottom: 5px;
-}
-.indexIndex {
-  margin: 0.5em 0 1em;
-}
-.index a {
-  font-weight: 700;
-}
-/* make the index two-column on all but the smallest screens */
-@media (min-width: 600px) {
-  .index ul {
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-  }
-  .index ul ul {
-    -moz-column-count: 1;
-    -moz-column-gap: 0;
-  }
-}
-
-/* authors */
-address.vcard {
-  font-style: normal;
-  margin: 1em 0;
-}
-
-address.vcard .nameRole {
-  font-weight: 700;
-  margin-left: 0;
-}
-address.vcard .label {
-  font-family: "Noto Sans",Arial,Helvetica,sans-serif;
-  margin: 0.5em 0;
-}
-address.vcard .type {
-  display: none;
-}
-.alternative-contact {
-  margin: 1.5em 0 1em;
-}
-hr.addr {
-  border-top: 1px dashed;
-  margin: 0;
-  color: #ddd;
-  max-width: calc(100% - 16px);
-}
-
-/* temporary notes */
-.rfcEditorRemove::before {
-  position: absolute;
-  top: 0.2em;
-  right: 0.2em;
-  padding: 0.2em;
-  content: "The RFC Editor will remove this note";
-  color: #9e2a00; /* Arlen: WCAG 2019 */
-  background-color: #ffd; /* Arlen: WCAG 2019 */
-}
-.rfcEditorRemove {
-  position: relative;
-  padding-top: 1.8em;
-  background-color: #ffd; /* Arlen: WCAG 2019 */
-  border-radius: 3px;
-}
-.cref {
-  background-color: #ffd; /* Arlen: WCAG 2019 */
-  padding: 2px 4px;
-}
-.crefSource {
-  font-style: italic;
-}
-/* alternative layout for smaller screens */
-@media screen and (max-width: 1023px) {
-  body {
-    padding-top: 2em;
-  }
-  #title {
-    padding: 1em 0;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 20px;
-    margin-top: -18px;  /* provide offset for in-page anchors */
-    padding-top: 38px;
-  }
-  #identifiers dd {
-    max-width: 60%;
-  }
-  #toc {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    background-color: inherit;
-    border-bottom: 1px solid #ccc;
-  }
-  #toc h2 {
-    margin: -1px 0 0 0;
-    padding: 4px 0 4px 6px;
-    padding-right: 1em;
-    min-width: 190px;
-    font-size: 1.1em;
-    text-align: right;
-    background-color: #444;
-    color: white;
-    cursor: pointer;
-  }
-  #toc h2::before { /* css hamburger */
-    float: right;
-    position: relative;
-    width: 1em;
-    height: 1px;
-    left: -164px;
-    margin: 6px 0 0 0;
-    background: white none repeat scroll 0 0;
-    box-shadow: 0 4px 0 0 white, 0 8px 0 0 white;
-    content: "";
-  }
-  #toc nav {
-    display: none;
-    padding: 0.5em 1em 1em;
-    overflow: auto;
-    height: calc(100vh - 48px);
-    border-left: 1px solid #ddd;
-  }
-}
-
-/* alternative layout for wide screens */
-@media screen and (min-width: 1024px) {
-  body {
-    max-width: 724px;
-    margin: 42px auto;
-    padding-left: 1.5em;
-    padding-right: 29em;
-  }
-  #toc {
-    position: fixed;
-    top: 42px;
-    right: 42px;
-    width: 25%;
-    margin: 0;
-    padding: 0 1em;
-    z-index: 1;
-  }
-  #toc h2 {
-    border-top: none;
-    border-bottom: 1px solid #ddd;
-    font-size: 1em;
-    font-weight: normal;
-    margin: 0;
-    padding: 0.25em 1em 1em 0;
-  }
-  #toc nav {
-    display: block;
-    height: calc(90vh - 84px);
-    bottom: 0;
-    padding: 0.5em 0 0;
-    overflow: auto;
-  }
-  img { /* future proofing */
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* pagination */
-@media print {
-  body {
-
-    width: 100%;
-  }
-  p {
-    orphans: 3;
-    widows: 3;
-  }
-  #n-copyright-notice {
-    border-bottom: none;
-  }
-  #toc, #n-introduction {
-    page-break-before: always;
-  }
-  #toc {
-    border-top: none;
-    padding-top: 0;
-  }
-  figure, pre {
-    page-break-inside: avoid;
-  }
-  figure {
-    overflow: scroll;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    page-break-after: avoid;
-  }
-  h2+*, h3+*, h4+*, h5+*, h6+* {
-    page-break-before: avoid;
-  }
-  pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-size: 10pt;
-  }
-  table {
-    border: 1px solid #ddd;
-  }
-  td {
-    border-top: 1px solid #ddd;
-  }
-}
-
-/* This is commented out here, as the string-set: doesn't
-   pass W3C validation currently */
-/*
-.ears thead .left {
-  string-set: ears-top-left content();
-}
-
-.ears thead .center {
-  string-set: ears-top-center content();
-}
-
-.ears thead .right {
-  string-set: ears-top-right content();
-}
-
-.ears tfoot .left {
-  string-set: ears-bottom-left content();
-}
-
-.ears tfoot .center {
-  string-set: ears-bottom-center content();
-}
-
-.ears tfoot .right {
-  string-set: ears-bottom-right content();
-}
-*/
-
-@page :first {
-  padding-top: 0;
-  @top-left {
-    content: normal;
-    border: none;
-  }
-  @top-center {
-    content: normal;
-    border: none;
-  }
-  @top-right {
-    content: normal;
-    border: none;
-  }
-}
-
-@page {
-  size: A4;
-  margin-bottom: 45mm;
-  padding-top: 20px;
-  /* The follwing is commented out here, but set appropriately by in code, as
-     the content depends on the document */
-  /*
-  @top-left {
-    content: 'Internet-Draft';
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @top-left {
-    content: string(ears-top-left);
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @top-center {
-    content: string(ears-top-center);
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @top-right {
-    content: string(ears-top-right);
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @bottom-left {
-    content: string(ears-bottom-left);
-    vertical-align: top;
-    border-top: solid 1px #ccc;
-  }
-  @bottom-center {
-    content: string(ears-bottom-center);
-    vertical-align: top;
-    border-top: solid 1px #ccc;
-  }
-  @bottom-right {
-      content: '[Page ' counter(page) ']';
-      vertical-align: top;
-      border-top: solid 1px #ccc;
-  }
-  */
-
-}
-
-/* Changes introduced to fix issues found during implementation */
-/* Make sure links are clickable even if overlapped by following H* */
-a {
-  z-index: 2;
-}
-/* Separate body from document info even without intervening H1 */
-section {
-  clear: both;
-}
-
-
-/* Top align author divs, to avoid names without organization dropping level with org names */
-.author {
-  vertical-align: top;
-}
-
-/* Leave room in document info to show Internet-Draft on one line */
-#identifiers dt {
-  width: 8em;
-}
-
-/* Don't waste quite as much whitespace between label and value in doc info */
-#identifiers dd {
-  margin-left: 1em;
-}
-
-/* Give floating toc a background color (needed when it's a div inside section */
-#toc {
-  background-color: white;
-}
-
-/* Make the collapsed ToC header render white on gray also when it's a link */
-@media screen and (max-width: 1023px) {
-  #toc h2 a,
-  #toc h2 a:link,
-  #toc h2 a:focus,
-  #toc h2 a:hover,
-  #toc a.toplink,
-  #toc a.toplink:hover {
-    color: white;
-    background-color: #444;
-    text-decoration: none;
-  }
-}
-
-/* Give the bottom of the ToC some whitespace */
-@media screen and (min-width: 1024px) {
-  #toc {
-    padding: 0 0 1em 1em;
-  }
-}
-
-/* Style section numbers with more space between number and title */
-.section-number {
-  padding-right: 0.5em;
-}
-
-/* prevent monospace from becoming overly large */
-tt, code, pre, code {
-  font-size: 95%;
-}
-
-/* Fix the height/width aspect for ascii art*/
-pre.sourcecode,
-.art-text pre {
-  line-height: 1.12;
-}
-
-
-/* Add styling for a link in the ToC that points to the top of the document */
-a.toplink {
-  float: right;
-  margin-right: 0.5em;
-}
-
-/* Fix the dl styling to match the RFC 7992 attributes */
-dl > dt,
-dl.dlParallel > dt {
-  float: left;
-  margin-right: 1em;
-}
-dl.dlNewline > dt {
-  float: none;
-}
-
-/* Provide styling for table cell text alignment */
-table td.text-left,
-table th.text-left {
-  text-align: left;
-}
-table td.text-center,
-table th.text-center {
-  text-align: center;
-}
-table td.text-right,
-table th.text-right {
-  text-align: right;
-}
-
-/* Make the alternative author contact informatio look less like just another
-   author, and group it closer with the primary author contact information */
-.alternative-contact {
-  margin: 0.5em 0 0.25em 0;
-}
-address .non-ascii {
-  margin: 0 0 0 2em;
-}
-
-/* With it being possible to set tables with alignment
-  left, center, and right, { width: 100%; } does not make sense */
-table {
-  width: auto;
-}
-
-/* Avoid reference text that sits in a block with very wide left margin,
-   because of a long floating dt label.*/
-.references dd {
-  overflow: visible;
-}
-
-/* Control caption placement */
-caption {
-  caption-side: bottom;
-}
-
-/* Limit the width of the author address vcard, so names in right-to-left
-   script don't end up on the other side of the page. */
-
-address.vcard {
-  max-width: 30em;
-  margin-right: auto;
-}
-
-/* For address alignment dependent on LTR or RTL scripts */
-address div.left {
-  text-align: left;
-}
-address div.right {
-  text-align: right;
-}
-
-/* Provide table alignment support.  We can't use the alignX classes above
-   since they do unwanted things with caption and other styling. */
-table.right {
- margin-left: auto;
- margin-right: 0;
-}
-table.center {
- margin-left: auto;
- margin-right: auto;
-}
-table.left {
- margin-left: 0;
- margin-right: auto;
-}
-
-/* Give the table caption label the same styling as the figcaption */
-caption a[href] {
-  color: #222;
-}
-
-@media print {
-  .toplink {
-    display: none;
-  }
-
-  /* avoid overwriting the top border line with the ToC header */
-  #toc {
-    padding-top: 1px;
-  }
-
-  /* Avoid page breaks inside dl and author address entries */
-  .vcard {
-    page-break-inside: avoid;
-  }
-
-}
-/* Avoid wrapping of URLs in references */
-@media screen {
-  .references a {
-    white-space: nowrap;
-  }
-}
-/* Tweak the bcp14 keyword presentation */
-.bcp14 {
-  font-variant: small-caps;
-  font-weight: bold;
-  font-size: 0.9em;
-}
-/* Tweak the invisible space above H* in order not to overlay links in text above */
- h2 {
-  margin-top: -18px;  /* provide offset for in-page anchors */
-  padding-top: 31px;
- }
- h3 {
-  margin-top: -18px;  /* provide offset for in-page anchors */
-  padding-top: 24px;
- }
- h4 {
-  margin-top: -18px;  /* provide offset for in-page anchors */
-  padding-top: 24px;
- }
-/* Float artwork pilcrow to the right */
-@media screen {
-  .artwork a.pilcrow {
-    display: block;
-    line-height: 0.7;
-    margin-top: 0.15em;
-  }
-}
-/* Make pilcrows on dd visible */
-@media screen {
-  dd:hover > a.pilcrow {
-    visibility: visible;
-  }
-}
-/* Make the placement of figcaption match that of a table's caption
-   by removing the figure's added bottom margin */
-.alignLeft.art-text,
-.alignCenter.art-text,
-.alignRight.art-text {
-   margin-bottom: 0;
-}
-.alignLeft,
-.alignCenter,
-.alignRight {
-  margin: 1em 0 0 0;
-}
-/* In print, the pilcrow won't show on hover, so prevent it from taking up space,
-   possibly even requiring a new line */
-@media print {
-  a.pilcrow {
-    display: none;
-  }
-}
-/* Styling for the external metadata */
-div#external-metadata {
-  background-color: #eee;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-  display: none;
-}
-div#internal-metadata {
-  padding: 0.5em;                       /* to match the external-metadata padding */
-}
-/* Styling for title RFC Number */
-h1#rfcnum {
-  clear: both;
-  margin: 0 0 -1em;
-  padding: 1em 0 0 0;
-}
-/* Make .olPercent look the same as <ol><li> */
-dl.olPercent > dd {
-  margin-bottom: 0.25em;
-  min-height: initial;
-}
-/* Give aside some styling to set it apart */
-aside {
-  border-left: 1px solid #ddd;
-  margin: 1em 0 1em 2em;
-  padding: 0.2em 2em;
-}
-aside > dl,
-aside > ol,
-aside > ul,
-aside > table,
-aside > p {
-  margin-bottom: 0.5em;
-}
-/* Additional page break settings */
-@media print {
-  figcaption, table caption {
-    page-break-before: avoid;
-  }
-}
-/* Font size adjustments for print */
-@media print {
-  body  { font-size: 10pt;      line-height: normal; max-width: 96%; }
-  h1    { font-size: 1.72em;    padding-top: 1.5em; } /* 1*1.2*1.2*1.2 */
-  h2    { font-size: 1.44em;    padding-top: 1.5em; } /* 1*1.2*1.2 */
-  h3    { font-size: 1.2em;     padding-top: 1.5em; } /* 1*1.2 */
-  h4    { font-size: 1em;       padding-top: 1.5em; }
-  h5, h6 { font-size: 1em;      margin: initial; padding: 0.5em 0 0.3em; }
-}
-/* Sourcecode margin in print, when there's no pilcrow */
-@media print {
-  .artwork,
-  .sourcecode {
-    margin-bottom: 1em;
-  }
-}
-/* Avoid narrow tables forcing too narrow table captions, which may render badly */
-table {
-  min-width: 20em;
-}
-/* ol type a */
-ol.type-a { list-style-type: lower-alpha; }
-ol.type-A { list-style-type: upper-alpha; }
-ol.type-i { list-style-type: lower-roman; }
-ol.type-I { list-style-type: lower-roman; }
-/* Apply the print table and row borders in general, on request from the RPC,
-and increase the contrast between border and odd row background sligthtly */
-table {
-  border: 1px solid #ddd;
-}
-td {
-  border-top: 1px solid #ddd;
-}
-tr:nth-child(2n+1) > td {
-  background-color: #f8f8f8;
-}
-/* Use style rules to govern display of the TOC. */
-@media screen and (max-width: 1023px) {
-  #toc nav { display: none; }
-  #toc.active nav { display: block; }
-}
-/* Add support for keepWithNext */
-.keepWithNext {
-  break-after: avoid-page;
-  break-after: avoid-page;
-}
-/* Add support for keepWithPrevious */
-.keepWithPrevious {
-  break-before: avoid-page;
-}
-/* Change the approach to avoiding breaks inside artwork etc. */
-figure, pre, table, .artwork, .sourcecode  {
-  break-before: avoid-page;
-  break-after: auto;
-}
-/* Avoid breaks between <dt> and <dd> */
-dl {
-  break-inside: auto;
-}
-dt {
-  break-before: auto;
-  break-after: avoid-page;
-}
-dd {
-  break-before: avoid-page;
-  break-after: auto;
-  orphans: 3;
-  widows: 3
-}
-dd.break {
-  margin-bottom: 0;
-  min-height: 0;
-  break-before: auto;
-  break-inside: auto;
-  break-after: auto;
-}
-/* Undo break-before ToC */
-@media print {
-  #toc {
-    break-before: auto;
-  }
-}</style>
-<link href="rfc-local.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
-<script src="metadata.min.js"></script>
-<table class="ears">
-<thead><tr>
+
+  <table class="header">
+    <tbody>
+    
+    	<tr>
+<td class="left">Network Working Group</td>
+<td class="right">B. Carpenter</td>
+</tr>
+<tr>
 <td class="left">Internet-Draft</td>
-<td class="center">Process for Adoption of Drafts</td>
-<td class="right">May 2020</td>
-</tr></thead>
-<tfoot><tr>
-<td class="left">Carpenter &amp; Gont</td>
-<td class="center">Expires 29 November 2020</td>
-<td class="right">[Page]</td>
-</tr></tfoot>
-</table>
-<div id="external-metadata" class="document-information"></div>
-<div id="internal-metadata" class="document-information">
-<dl id="identifiers">
-<dt class="label-workgroup">Workgroup:</dt>
-<dd class="workgroup">Network Working Group</dd>
-<dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-carpenter-gendispatch-draft-adoption-00</dd>
-<dt class="label-published">Published:</dt>
-<dd class="published">
-<time datetime="2020-05-28" class="published">28 May 2020</time>
-    </dd>
-<dt class="label-intended-status">Intended Status:</dt>
-<dd class="intended-status">Best Current Practice</dd>
-<dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2020-11-29">29 November 2020</time></dd>
-<dt class="label-authors">Authors:</dt>
-<dd class="authors">
-<div class="author">
-      <div class="author-name">B.E. Carpenter</div>
-<div class="org">Univ. of Auckland</div>
-</div>
-<div class="author">
-      <div class="author-name">F. Gont</div>
-<div class="org">SI6 Networks</div>
-</div>
-</dd>
-</dl>
-</div>
-<h1 id="title">Process for Working Group Adoption of Drafts</h1>
-<section id="section-abstract">
-      <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">IETF working groups often formally adopt drafts. This document
-specifies minimum requirements for this process, thereby
-extending RFC 2418. It also describes how an adopted draft
-may be withdrawn from the working group process.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
-</section>
-<div id="status-of-memo">
-<section id="section-boilerplate.1">
-        <h2 id="name-status-of-this-memo">
-<a href="#name-status-of-this-memo" class="section-name selfRef">Status of This Memo</a>
-        </h2>
-<p id="section-boilerplate.1-1">
-        This Internet-Draft is submitted in full conformance with the
-        provisions of BCP 78 and BCP 79.<a href="#section-boilerplate.1-1" class="pilcrow">¶</a></p>
-<p id="section-boilerplate.1-2">
-        Internet-Drafts are working documents of the Internet Engineering Task
-        Force (IETF). Note that other groups may also distribute working
-        documents as Internet-Drafts. The list of current Internet-Drafts is
-        at <span><a href="https://datatracker.ietf.org/drafts/current/">https://datatracker.ietf.org/drafts/current/</a></span>.<a href="#section-boilerplate.1-2" class="pilcrow">¶</a></p>
-<p id="section-boilerplate.1-3">
-        Internet-Drafts are draft documents valid for a maximum of six months
-        and may be updated, replaced, or obsoleted by other documents at any
-        time. It is inappropriate to use Internet-Drafts as reference
-        material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
-<p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 29 November 2020.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="copyright">
-<section id="section-boilerplate.2">
-        <h2 id="name-copyright-notice">
-<a href="#name-copyright-notice" class="section-name selfRef">Copyright Notice</a>
-        </h2>
-<p id="section-boilerplate.2-1">
-            Copyright (c) 2020 IETF Trust and the persons identified as the
-            document authors. All rights reserved.<a href="#section-boilerplate.2-1" class="pilcrow">¶</a></p>
-<p id="section-boilerplate.2-2">
-            This document is subject to BCP 78 and the IETF Trust's Legal
-            Provisions Relating to IETF Documents
-            (<span><a href="https://trustee.ietf.org/license-info">https://trustee.ietf.org/license-info</a></span>) in effect on the date of
-            publication of this document. Please review these documents
-            carefully, as they describe your rights and restrictions with
-            respect to this document. Code Components extracted from this
-            document must include Simplified BSD License text as described in
-            Section 4.e of the Trust Legal Provisions and are provided without
-            warranty as described in the Simplified BSD License.<a href="#section-boilerplate.2-2" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="toc">
-<section id="section-toc.1">
-        <a href="#" onclick="scroll(0,0)" class="toplink">▲</a><h2 id="name-table-of-contents">
-<a href="#name-table-of-contents" class="section-name selfRef">Table of Contents</a>
-        </h2>
-<nav class="toc"><ul class="toc ulEmpty">
-<li class="toc ulEmpty" id="section-toc.1-1.1">
-            <p id="section-toc.1-1.1.1" class="keepWithNext"><a href="#section-1" class="xref">1</a>.  <a href="#name-introduction" class="xref">Introduction</a><a href="#section-toc.1-1.1.1" class="pilcrow">¶</a></p>
+<td class="right">Univ. of Auckland</td>
+</tr>
+<tr>
+<td class="left">Intended status: Best Current Practice</td>
+<td class="right">F. Gont</td>
+</tr>
+<tr>
+<td class="left">Expires: December 1, 2020</td>
+<td class="right">SI6 Networks</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">M. Richardson</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">Sandelman Software Works</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">May 30, 2020</td>
+</tr>
+
+    	
+    </tbody>
+  </table>
+
+  <p class="title">Process for Working Group Adoption of Drafts<br />
+  <span class="filename">draft-carpenter-gendispatch-draft-adoption-00</span></p>
+  
+  <h1 id="rfc.abstract"><a href="#rfc.abstract">Abstract</a></h1>
+<p>IETF working groups often formally adopt drafts. This document specifies minimum requirements for this process, thereby extending RFC 2418. It also describes how an adopted draft may be withdrawn from the working group process.</p>
+<h1 id="rfc.status"><a href="#rfc.status">Status of This Memo</a></h1>
+<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
+<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
+<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
+<p>This Internet-Draft will expire on December 1, 2020.</p>
+<h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
+<p>Copyright (c) 2020 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
+<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
+
+  
+  <hr class="noprint" />
+  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
+  <ul class="toc">
+
+  	<li>1.   <a href="#rfc.section.1">Introduction</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.2">
-            <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="xref">2</a>.  <a href="#name-consequences-of-wg-adoption" class="xref">Consequences of WG Adoption of an Internet-Draft</a><a href="#section-toc.1-1.2.1" class="pilcrow">¶</a></p>
+<li>2.   <a href="#rfc.section.2">Consequences of WG Adoption of an Internet-Draft</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="xref">3</a>.  <a href="#name-rules-for-adoption-of-an-in" class="xref">Rules for Adoption of an Internet-Draft</a><a href="#section-toc.1-1.3.1" class="pilcrow">¶</a></p>
+<li>3.   <a href="#rfc.section.3">Rules for Adoption of an Internet-Draft</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-withdrawal-of-an-adopted-in" class="xref">Withdrawal of an Adopted Internet-Draft</a><a href="#section-toc.1-1.4.1" class="pilcrow">¶</a></p>
+<li>4.   <a href="#rfc.section.4">Withdrawal of an Adopted Internet-Draft</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-iana-considerations" class="xref">IANA Considerations</a><a href="#section-toc.1-1.5.1" class="pilcrow">¶</a></p>
+<li>5.   <a href="#rfc.section.5">IANA Considerations</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-security-considerations" class="xref">Security Considerations</a><a href="#section-toc.1-1.6.1" class="pilcrow">¶</a></p>
+<li>6.   <a href="#rfc.section.6">Security Considerations</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-acknowledgements" class="xref">Acknowledgements</a><a href="#section-toc.1-1.7.1" class="pilcrow">¶</a></p>
+<li>7.   <a href="#rfc.section.7">Acknowledgements</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#section-8" class="xref">8</a>.  <a href="#name-references" class="xref">References</a><a href="#section-toc.1-1.8.1" class="pilcrow">¶</a></p>
-<ul class="toc ulEmpty">
-<li class="toc ulEmpty" id="section-toc.1-1.8.2.1">
-                <p id="section-toc.1-1.8.2.1.1"><a href="#section-8.1" class="xref">8.1</a>.  <a href="#name-normative-references" class="xref">Normative References</a><a href="#section-toc.1-1.8.2.1.1" class="pilcrow">¶</a></p>
+<li>8.   <a href="#rfc.references">References</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.8.2.2">
-                <p id="section-toc.1-1.8.2.2.1"><a href="#section-8.2" class="xref">8.2</a>.  <a href="#name-informative-references" class="xref">Informative References</a><a href="#section-toc.1-1.8.2.2.1" class="pilcrow">¶</a></p>
+<ul><li>8.1.   <a href="#rfc.references.1">Normative References</a>
 </li>
-</ul>
+<li>8.2.   <a href="#rfc.references.2">Informative References</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.9">
-            <p id="section-toc.1-1.9.1"><a href="#section-appendix.a" class="xref">Appendix A</a>.  <a href="#name-change-log" class="xref">Change Log</a><a href="#section-toc.1-1.9.1" class="pilcrow">¶</a></p>
-<ul class="toc ulEmpty">
-<li class="toc ulEmpty" id="section-toc.1-1.9.2.1">
-                <p id="section-toc.1-1.9.2.1.1"><a href="#section-a.1" class="xref">A.1</a>.  <a href="#name-draft-00" class="xref">Draft-00</a><a href="#section-toc.1-1.9.2.1.1" class="pilcrow">¶</a></p>
+</ul><li>Appendix A.   <a href="#rfc.appendix.A">Change Log</a>
 </li>
-</ul>
+<ul><li>A.1.   <a href="#rfc.appendix.A.1">Draft-00</a>
 </li>
-<li class="toc ulEmpty" id="section-toc.1-1.10">
-            <p id="section-toc.1-1.10.1"><a href="#section-appendix.b" class="xref"></a><a href="#name-authors-addresses" class="xref">Authors' Addresses</a><a href="#section-toc.1-1.10.1" class="pilcrow">¶</a></p>
+</ul><li><a href="#rfc.authors">Authors' Addresses</a>
 </li>
-</ul>
-</nav>
-</section>
-</div>
-<div id="intro">
-<section id="section-1">
-      <h2 id="name-introduction">
-<a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
-      </h2>
-<p id="section-1-1">According to <span>[<a href="#RFC2418" class="xref">RFC2418</a>]</span>, the Internet-Drafts (I-D) mechanism is a "resource for posting and disseminating in-process copies of working group documents." However, most I-Ds start as
-individual contributions and only become working group documents by a WG decision
-generally referred to as "adoption." As noted in <span>[<a href="#RFC7221" class="xref">RFC7221</a>]</span>, this process was not
-previously documented as a formal step in the IETF WG process. This has sometimes
-led to confusion about the significance of such adoption and about how it
-fits into the IETF standards process. The present document is intended to define
-a few formal rules about adoption to reduce such confusion.<a href="#section-1-1" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="consequences-of-wg-adoption-of-an-internet-draft">
-<section id="section-2">
-      <h2 id="name-consequences-of-wg-adoption">
-<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-consequences-of-wg-adoption" class="section-name selfRef">Consequences of WG Adoption of an Internet-Draft</a>
-      </h2>
-<p id="section-2-1">After a draft has been formally adopted by a WG, its original authors no longer have
-formal change control of the text. In addition to the normal consequence of posting
-a draft, i.e., that it becomes an IETF Contribution under <span>[<a href="#RFC5378" class="xref">RFC5378</a>]</span>, all future
-substantive changes to the draft require WG consensus and are no longer at the authors'
-sole discretion.<a href="#section-2-1" class="pilcrow">¶</a></p>
-<p id="section-2-2">As a practical matter, the original authors usually continue to edit the document
-and make routine editorial decisions, but substantive changes must be referred to
-the WG and require WG rough consensus, consistently with <span>[<a href="#RFC2418" class="xref">RFC2418</a>]</span>. It is
-also possible that new authors or editors will join the draft, or that previous
-authors may withdraw.<a href="#section-2-2" class="pilcrow">¶</a></p>
-<p id="section-2-3">Adoption represents a commitment that the WG will spend time and effort on the
-draft, but it does not guarantee that the draft will reach WG consensus and be
-submitted to the IESG for publication as an RFC.<a href="#section-2-3" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="rules-for-adoption-of-an-internet-draft">
-<section id="section-3">
-      <h2 id="name-rules-for-adoption-of-an-in">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-rules-for-adoption-of-an-in" class="section-name selfRef">Rules for Adoption of an Internet-Draft</a>
-      </h2>
-<p id="section-3-1">WG Adoption of an I-D is not a required step of the IETF standards process. It is legitimate for a draft to be submitted to the IESG as described in <span>[<a href="#RFC2026" class="xref">RFC2026</a>]</span> without a formal adoption by a WG. However, if a WG chooses to use an adoption process, it must follow the following rules and it should consider the additional guidelines in <span>[<a href="#RFC7221" class="xref">RFC7221</a>]</span>.<a href="#section-3-1" class="pilcrow">¶</a></p>
+
+
+  </ul>
+
+  <h1 id="rfc.section.1">
+<a href="#rfc.section.1">1.</a> <a href="#intro" id="intro">Introduction</a>
+</h1>
+<p id="rfc.section.1.p.1">According to <a href="#RFC2418" class="xref">[RFC2418]</a>, the Internet-Drafts (I-D) mechanism is a "resource for posting and disseminating in-process copies of working group documents." However, most I-Ds start as individual contributions and only become working group documents by a WG decision generally referred to as "adoption." As noted in <a href="#RFC7221" class="xref">[RFC7221]</a>, this process was not previously documented as a formal step in the IETF WG process. This has sometimes led to confusion about the significance of such adoption and about how it fits into the IETF standards process. The present document is intended to define a few formal rules about adoption to reduce such confusion.</p>
+<h1 id="rfc.section.2">
+<a href="#rfc.section.2">2.</a> <a href="#consequences-of-wg-adoption-of-an-internet-draft" id="consequences-of-wg-adoption-of-an-internet-draft">Consequences of WG Adoption of an Internet-Draft</a>
+</h1>
+<p id="rfc.section.2.p.1">After a draft has been formally adopted by a WG, its original authors no longer have formal change control of the text. In addition to the normal consequence of posting a draft, i.e., that it becomes an IETF Contribution under <a href="#RFC5378" class="xref">[RFC5378]</a>, all future substantive changes to the draft require WG consensus and are no longer at the authors' sole discretion.</p>
+<p id="rfc.section.2.p.2">As a practical matter, the original authors usually continue to edit the document and make routine editorial decisions, but substantive changes must be referred to the WG and require WG rough consensus, consistently with <a href="#RFC2418" class="xref">[RFC2418]</a>. It is also possible that new authors or editors will join the draft, or that previous authors may withdraw.</p>
+<p id="rfc.section.2.p.3">Adoption represents a commitment that the WG will spend time and effort on the draft, but it does not guarantee that the draft will reach WG consensus and be submitted to the IESG for publication as an RFC.</p>
+<h1 id="rfc.section.3">
+<a href="#rfc.section.3">3.</a> <a href="#rules-for-adoption-of-an-internet-draft" id="rules-for-adoption-of-an-internet-draft">Rules for Adoption of an Internet-Draft</a>
+</h1>
+<p id="rfc.section.3.p.1">A WG Adoption Call of an I-D is not a required step of the IETF standards process.  The WG chairs decide what documents belong in the WG, and can create new documents by fiat.  A simple situation would be if a WG decides that an existing document should be split into two pieces: There is no reason to adopt each piece, that is needless bureaucracy.  A WG that decides to create a design team to solve a problem has implicitely agreed to adopt the result.  To not adopt the result is to say that the results of the WG mandated design team does not deserve first class agenda time.  Such a design team would have been created, for instance, when a WG can not decide between two competing individual drafts and decides to merge them.</p>
+<p id="rfc.section.3.p.2">It is legitimate for a draft to be submitted to the IESG as described in <a href="#RFC2026" class="xref">[RFC2026]</a> without a formal adoption by a WG.</p>
+<p id="rfc.section.3.p.3">If WG Chairs choose to consult the WG about adopting a document, this is the recommended process.  The WG Chairs should also consider the additional guidelines in <a href="#RFC7221" class="xref">[RFC7221]</a>.</p>
+<p></p>
+
 <ul>
-<li id="section-3-2.1">Any participant may request the adoption of a draft, after there has been a period of technical discussion of the draft in the relevant WG.<a href="#section-3-2.1" class="pilcrow">¶</a>
+<li>Any participant may request the adoption of a draft, after there has been a period of technical discussion of the draft in the relevant WG.</li>
+<li>WG Chairs have discretion about when to issue an WG call for adoption, but they should do so regardless of their own opinions, when the WG discussion shows that there is clear interest in the draft in question.</li>
+<li>A WG Chair or WG Secretary must send a formal WG call for adoption of a draft to the WG mailing list with at least two weeks time to respond.</li>
+<li>This proposal should remind all participants, not just the authors, of their obligation to disclose relevant intellectual property rights (IPR) under <a href="#RFC8179" class="xref">[RFC8179]</a>.</li>
+<li>Participants should consider the following aspects when responding to the WG call for adoption:  <ul>
+<li>The draft must fit within the current WG charter, or would do so with a simple modification to the charter.</li>
+<li>The purpose of the draft should be clear.</li>
+<li>The proposal should be useful.</li>
+<li>The quality of writing should be sufficient for document to serve as the basis further work.</li>
+<li>There should be no strong technical objections.</li>
+<li>Any IPR disclosures should be acceptable.</li>
+<li>The work should not be in conflict with work elsewhere in the IETF.</li>
+</ul>
 </li>
-<li id="section-3-2.2">WG Chairs have discretion about when to issue an WG call for adoption, but they should do so regardless of their own opinions, when the WG discussion shows that there is clear interest
-in the draft in question.<a href="#section-3-2.2" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.3">A WG Chair or WG Secretary must send a formal WG call for adoption of a draft to the WG mailing list with at least two weeks time to respond.<a href="#section-3-2.3" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.4">This proposal should remind all participants, not just the authors, of their obligation to disclose relevant intellectual property rights (IPR) under <span>[<a href="#RFC8179" class="xref">RFC8179</a>]</span>.<a href="#section-3-2.4" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.5">
-          <p id="section-3-2.5.1">Participants should consider the following aspects when responding to the WG call for adoption:<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
+<li>An informal summary of these criteria is: Is this a problem the WG wants to solve in a way approximately as described in the draft?</li>
+<li>After this period, a WG Chair must, in a timely fashion, consider the comments and discussion in order to judge whether there is rough consensus to adopt the draft, and whether there is enough interest in the work that its completion is likely.</li>
+<li>If there is such consensus, this WG Chair will announce the result and, if positive, will request the authors to post a new version using an appropriate naming convention.</li>
+<li>This whole process is subject to the appeals process of <a href="#RFC2026" class="xref">[RFC2026]</a>.</li>
+</ul>
+<h1 id="rfc.section.4">
+<a href="#rfc.section.4">4.</a> <a href="#withdrawal-of-an-adopted-internet-draft" id="withdrawal-of-an-adopted-internet-draft">Withdrawal of an Adopted Internet-Draft</a>
+</h1>
+<p id="rfc.section.4.p.1">It sometimes happens that an adopted draft does not reach WG consensus to be submitted to the IESG for publication as an RFC due to lack of interest, lack of effort, or lack of consensus. In such a case, it may be desirable for the WG to formally withdraw the WG draft, such that it is explicitly removed from the WG's agenda and returned to the authors' control.</p>
+<p id="rfc.section.4.p.2">The withdrawal of WG document should be the result of an explicit decision by the relevant WG, and should follow the following recommendations.</p>
+<p></p>
+
 <ul>
-<li id="section-3-2.5.2.1">The draft must fit within the current WG charter, or would do so with a simple modification to the charter.<a href="#section-3-2.5.2.1" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.5.2.2">The purpose of the draft should be clear.<a href="#section-3-2.5.2.2" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.5.2.3">The proposal should be useful.<a href="#section-3-2.5.2.3" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.5.2.4">The quality of writing should be sufficient for document to serve as the basis further work.<a href="#section-3-2.5.2.4" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.5.2.5">There should be no strong technical objections.<a href="#section-3-2.5.2.5" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.5.2.6">Any IPR disclosures should be acceptable.<a href="#section-3-2.5.2.6" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.5.2.7">The work should not be in conflict with work elsewhere in the IETF.<a href="#section-3-2.5.2.7" class="pilcrow">¶</a>
-</li>
+<li>Upon evidence that progress on a WG draft has been stalled for a considerable period of time, a WG chair should evaluate the reasons of the apparent lack of progress. Such reasons may may include lack of interest, lack of effort, or lack of consensus.</li>
+<li>When progress on a document has been stalled for a considerable period of time, a WG chair, in consultation with the WG draft authors and editors, should attempt to resume progress by taking appropriate actions that will normally depend on the nature of the lack of progress. For example, a WG draft that has been stalled due to apparent lack of interest may benefit from a call for a number of volunters to produce detailed reviews of the WG draft. Similarly, a WG draft that has been stalled due to lack of effort by its authors/editors may benefit from the incorporation of new WG draft editors or the replacement of some of the existing ones.</li>
+<li>If after succesive failed attempts to make progress on a WG draft its completion remains unlikely, the WG Chairs may, at their own discretion, conclude that it is time for the WG to consider the formal withdrawal of the WG draft.</li>
+<li>In such case, a WG Chair or WG Secretary must send a formal WG consensus call for withdrawal of the WG draft to the WG mailing list with at least two weeks time to respond, explaining the events that have triggered the aforementioned consensus call.</li>
+<li>After this period, a WG Chair must, in a timely fashion, consider the comments and discussion in order to judge whether there is any concrete evidence that completion of the work may now be feasible, or whether completion of the work remains unlikely.</li>
+<li>If further progress on the document remains unlikely, the WG Chair will announce the result of the consensus call and the formal withdrawal of the WG document. This will result in the document being removed from the WG's agenda and returned to the authors' control.</li>
+<li>This whole process is subject to the appeals process of <a href="#RFC2026" class="xref">[RFC2026]</a>.</li>
 </ul>
-</li>
-<li id="section-3-2.6">An informal summary of these criteria is: Is this a problem the WG wants to
-solve in a way approximately as described in the draft?<a href="#section-3-2.6" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.7">After this period, a WG Chair must, in a timely fashion, consider the comments and discussion in order to judge whether there is rough consensus to adopt the draft, and whether there is enough interest in the work that its completion is likely.<a href="#section-3-2.7" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.8">If there is such consensus, this WG Chair will announce the result and, if positive, will
-request the authors to post a new version using an appropriate naming convention.<a href="#section-3-2.8" class="pilcrow">¶</a>
-</li>
-<li id="section-3-2.9">This whole process is subject to the appeals process of <span>[<a href="#RFC2026" class="xref">RFC2026</a>]</span>.<a href="#section-3-2.9" class="pilcrow">¶</a>
-</li>
-</ul>
-</section>
+<h1 id="rfc.section.5">
+<a href="#rfc.section.5">5.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a>
+</h1>
+<p id="rfc.section.5.p.1">This document makes no request of IANA.</p>
+<h1 id="rfc.section.6">
+<a href="#rfc.section.6">6.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a>
+</h1>
+<p id="rfc.section.6.p.1">This document should not affect the security of the Internet.</p>
+<h1 id="rfc.section.7">
+<a href="#rfc.section.7">7.</a> <a href="#acknowledgements" id="acknowledgements">Acknowledgements</a>
+</h1>
+<p id="rfc.section.7.p.1">Useful comments were received from [TBD] &#8230;</p>
+<h1 id="rfc.references">
+<a href="#rfc.references">8.</a> References</h1>
+<h1 id="rfc.references.1">
+<a href="#rfc.references.1">8.1.</a> Normative References</h1>
+<table><tbody>
+<tr>
+<td class="reference"><b id="RFC2026">[RFC2026]</b></td>
+<td class="top">
+<a>Bradner, S.</a>, "<a href="https://tools.ietf.org/html/rfc2026">The Internet Standards Process -- Revision 3</a>", BCP 9, RFC 2026, DOI 10.17487/RFC2026, October 1996.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC2418">[RFC2418]</b></td>
+<td class="top">
+<a>Bradner, S.</a>, "<a href="https://tools.ietf.org/html/rfc2418">IETF Working Group Guidelines and Procedures</a>", BCP 25, RFC 2418, DOI 10.17487/RFC2418, September 1998.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC5378">[RFC5378]</b></td>
+<td class="top">
+<a>Bradner, S.</a> and <a>J. Contreras</a>, "<a href="https://tools.ietf.org/html/rfc5378">Rights Contributors Provide to the IETF Trust</a>", BCP 78, RFC 5378, DOI 10.17487/RFC5378, November 2008.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC8179">[RFC8179]</b></td>
+<td class="top">
+<a>Bradner, S.</a> and <a>J. Contreras</a>, "<a href="https://tools.ietf.org/html/rfc8179">Intellectual Property Rights in IETF Technology</a>", BCP 79, RFC 8179, DOI 10.17487/RFC8179, May 2017.</td>
+</tr>
+</tbody></table>
+<h1 id="rfc.references.2">
+<a href="#rfc.references.2">8.2.</a> Informative References</h1>
+<table><tbody><tr>
+<td class="reference"><b id="RFC7221">[RFC7221]</b></td>
+<td class="top">
+<a>Farrel, A.</a> and <a>D. Crocker</a>, "<a href="https://tools.ietf.org/html/rfc7221">Handling of Internet-Drafts by IETF Working Groups</a>", RFC 7221, DOI 10.17487/RFC7221, April 2014.</td>
+</tr></tbody></table>
+<h1 id="rfc.appendix.A">
+<a href="#rfc.appendix.A">Appendix A.</a> <a href="#change-log" id="change-log">Change Log</a>
+</h1>
+<h1 id="rfc.appendix.A.1">
+<a href="#rfc.appendix.A.1">A.1.</a> <a href="#draft-00" id="draft-00">Draft-00</a>
+</h1>
+<p></p>
+
+<ul><li>Original version</li></ul>
+<h1 id="rfc.authors"><a href="#rfc.authors">Authors' Addresses</a></h1>
+<div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Brian E. Carpenter</span> 
+	  <span class="n hidden">
+		<span class="family-name">Carpenter</span>
+	  </span>
+	</span>
+	<span class="org vcardline">The University of Auckland</span>
+	<span class="adr">
+	  <span class="vcardline">School of Computer Science</span>
+<span class="vcardline">PB 92019</span>
+
+	  <span class="vcardline">
+		<span class="locality">Auckland</span>,  
+		<span class="region"></span>
+		<span class="code">1142</span>
+	  </span>
+	  <span class="country-name vcardline">New Zealand</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:brian.e.carpenter@gmail.com">brian.e.carpenter@gmail.com</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Fernando Gont</span> 
+	  <span class="n hidden">
+		<span class="family-name">Gont</span>
+	  </span>
+	</span>
+	<span class="org vcardline">SI6 Networks</span>
+	<span class="adr">
+	  <span class="vcardline">Evaristo Carriego 2644</span>
+
+	  <span class="vcardline">
+		<span class="locality">Haedo</span>,  
+		<span class="region">Provincia de Buenos Aires</span> 
+		<span class="code">1706</span>
+	  </span>
+	  <span class="country-name vcardline">Argentina</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:fgont@si6networks.com">fgont@si6networks.com</a></span>
+
+<span class="vcardline">URI: <a href="https://www.si6networks.com">https://www.si6networks.com</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Michael Richardson</span> 
+	  <span class="n hidden">
+		<span class="family-name">Richardson</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Sandelman Software Works</span>
+	<span class="adr">
+	  
+	  <span class="vcardline">
+		<span class="locality"></span> 
+		<span class="region"></span>
+		<span class="code"></span>
+	  </span>
+	  <span class="country-name vcardline"></span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:mcr+ietf@sandelman.ca">mcr+ietf@sandelman.ca</a></span>
+
+<span class="vcardline">URI: <a href="https://www.sandelman.ca/mcr/">https://www.sandelman.ca/mcr/</a></span>
+
+  </address>
 </div>
-<div id="withdrawal-of-an-adopted-internet-draft">
-<section id="section-4">
-      <h2 id="name-withdrawal-of-an-adopted-in">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-withdrawal-of-an-adopted-in" class="section-name selfRef">Withdrawal of an Adopted Internet-Draft</a>
-      </h2>
-<p id="section-4-1">It sometimes happens that an adopted draft does not progress to WG Last Call due to lack of interest, lack of effort, or lack of consensus. In such a case, it may be desirable for the WG to formally withdraw the WG draft, such that it is explicitly removed from the WG's agenda and returned to the authors' control.<a href="#section-4-1" class="pilcrow">¶</a></p>
-<p id="section-4-2">The withdrawal of WG document should be the result of an explicit decision by the relevant WG, and should follow the following recommendations.<a href="#section-4-2" class="pilcrow">¶</a></p>
-<ul>
-<li id="section-4-3.1">Upon evidence that progress on a WG draft has been stalled for a considerable period of time, a WG chair should evaluate the reasons of the apparent lack of progress. Such reasons may may include lack of interest, lack of effort, or lack of consensus.<a href="#section-4-3.1" class="pilcrow">¶</a>
-</li>
-<li id="section-4-3.2">When progress on a document has been stalled for a considerable period of time, a WG chair, in consultation with the WG draft authors and editors, should attempt to resume progress by taking appropriate actions that will normally depend on the nature of the lack of progress. For example, a WG draft that has been stalled due to apparent lack of interest may benefit from a call for a number of volunters to produce detailed reviews of the WG draft. Similarly, a WG draft that has been stalled due to lack of effort by its authors/editors may benefit from the incorporation of new WG draft editors or the replacement of some of of the existing ones.<a href="#section-4-3.2" class="pilcrow">¶</a>
-</li>
-<li id="section-4-3.3">If after succesive failed attempts to make progress on a WG draft its completion remains unlikely, the WG Chairs may, at their own discretion, conclude that it is time for the WG to consider the formal withdrawal of the WG draft.<a href="#section-4-3.3" class="pilcrow">¶</a>
-</li>
-<li id="section-4-3.4">In such case, a WG Chair or WG Secretary must send a formal WG consensus call for withdrawal of the WG draft to the WG mailing list with at least two weeks time to respond, explaining the events that have triggered the aforementioned consensus call.<a href="#section-4-3.4" class="pilcrow">¶</a>
-</li>
-<li id="section-4-3.5">After this period, a WG Chair must, in a timely fashion, consider the comments and discussion in order to judge whether there is any concrete evidence that completion of the work may now be feasible, or whether completion of the work remains unlikely.<a href="#section-4-3.5" class="pilcrow">¶</a>
-</li>
-<li id="section-4-3.6">If further progress on the document remains unlikely, the WG Chair will announce the result of the consensus call and the formal withdrawal of the WG document. This will result in the document being removed from the WG's agenda and returned to the authors' control.<a href="#section-4-3.6" class="pilcrow">¶</a>
-</li>
-<li id="section-4-3.7">This whole process is subject to the appeals process of <span>[<a href="#RFC2026" class="xref">RFC2026</a>]</span>.<a href="#section-4-3.7" class="pilcrow">¶</a>
-</li>
-</ul>
-</section>
-</div>
-<div id="iana-considerations">
-<section id="section-5">
-      <h2 id="name-iana-considerations">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
-      </h2>
-<p id="section-5-1">This document makes no request of IANA.<a href="#section-5-1" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="security-considerations">
-<section id="section-6">
-      <h2 id="name-security-considerations">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
-      </h2>
-<p id="section-6-1">This document should not affect the security of the Internet.<a href="#section-6-1" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="acknowledgements">
-<section id="section-7">
-      <h2 id="name-acknowledgements">
-<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-acknowledgements" class="section-name selfRef">Acknowledgements</a>
-      </h2>
-<p id="section-7-1">Useful comments were received from Michael Richardson, ...<a href="#section-7-1" class="pilcrow">¶</a></p>
-</section>
-</div>
-<section id="section-8">
-      <h2 id="name-references">
-<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-references" class="section-name selfRef">References</a>
-      </h2>
-<section id="section-8.1">
-        <h3 id="name-normative-references">
-<a href="#section-8.1" class="section-number selfRef">8.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
-        </h3>
-<dl class="references">
-<dt id="RFC2026">[RFC2026]</dt>
-<dd>
-<span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"The Internet Standards Process -- Revision 3"</span>, <span class="seriesInfo">BCP 9</span>, <span class="seriesInfo">RFC 2026</span>, <span class="seriesInfo">DOI 10.17487/RFC2026</span>, <time datetime="1996-10">October 1996</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2026">https://www.rfc-editor.org/info/rfc2026</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC2418">[RFC2418]</dt>
-<dd>
-<span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"IETF Working Group Guidelines and Procedures"</span>, <span class="seriesInfo">BCP 25</span>, <span class="seriesInfo">RFC 2418</span>, <span class="seriesInfo">DOI 10.17487/RFC2418</span>, <time datetime="1998-09">September 1998</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2418">https://www.rfc-editor.org/info/rfc2418</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC5378">[RFC5378]</dt>
-<dd>
-<span class="refAuthor">Bradner, S., Ed.</span><span class="refAuthor"> and J. Contreras, Ed.</span>, <span class="refTitle">"Rights Contributors Provide to the IETF Trust"</span>, <span class="seriesInfo">BCP 78</span>, <span class="seriesInfo">RFC 5378</span>, <span class="seriesInfo">DOI 10.17487/RFC5378</span>, <time datetime="2008-11">November 2008</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5378">https://www.rfc-editor.org/info/rfc5378</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC8179">[RFC8179]</dt>
-<dd>
-<span class="refAuthor">Bradner, S.</span><span class="refAuthor"> and J. Contreras</span>, <span class="refTitle">"Intellectual Property Rights in IETF Technology"</span>, <span class="seriesInfo">BCP 79</span>, <span class="seriesInfo">RFC 8179</span>, <span class="seriesInfo">DOI 10.17487/RFC8179</span>, <time datetime="2017-05">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8179">https://www.rfc-editor.org/info/rfc8179</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-</dl>
-</section>
-<section id="section-8.2">
-        <h3 id="name-informative-references">
-<a href="#section-8.2" class="section-number selfRef">8.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
-        </h3>
-<dl class="references">
-<dt id="RFC7221">[RFC7221]</dt>
-<dd>
-<span class="refAuthor">Farrel, A.</span><span class="refAuthor"> and D. Crocker, Ed.</span>, <span class="refTitle">"Handling of Internet-Drafts by IETF Working Groups"</span>, <span class="seriesInfo">RFC 7221</span>, <span class="seriesInfo">DOI 10.17487/RFC7221</span>, <time datetime="2014-04">April 2014</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7221">https://www.rfc-editor.org/info/rfc7221</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-</dl>
-</section>
-</section>
-<div id="change-log">
-<section id="section-appendix.a">
-      <h2 id="name-change-log">
-<a href="#section-appendix.a" class="section-number selfRef">Appendix A. </a><a href="#name-change-log" class="section-name selfRef">Change Log</a>
-      </h2>
-<div id="draft-00">
-<section id="section-a.1">
-        <h2 id="name-draft-00">
-<a href="#section-a.1" class="section-number selfRef">A.1. </a><a href="#name-draft-00" class="section-name selfRef">Draft-00</a>
-        </h2>
-<ul>
-<li id="section-a.1-1.1">Original version<a href="#section-a.1-1.1" class="pilcrow">¶</a>
-</li>
-</ul>
-</section>
-</div>
-</section>
-</div>
-<div id="authors-addresses">
-<section id="section-appendix.b">
-      <h2 id="name-authors-addresses">
-<a href="#name-authors-addresses" class="section-name selfRef">Authors' Addresses</a>
-      </h2>
-<address class="vcard">
-        <div dir="auto" class="left"><span class="fn nameRole">Brian E. Carpenter</span></div>
-<div dir="auto" class="left"><span class="org">The University of Auckland</span></div>
-<div dir="auto" class="left"><span class="street-address">School of Computer Science<br>PB 92019</span></div>
-<div dir="auto" class="left">
-<span class="locality">Auckland</span> <span class="postal-code">1142</span>
-</div>
-<div dir="auto" class="left"><span class="country-name">New Zealand</span></div>
-<div class="email">
-<span>Email:</span>
-<a href="mailto:brian.e.carpenter@gmail.com" class="email">brian.e.carpenter@gmail.com</a>
-</div>
-</address>
-<address class="vcard">
-        <div dir="auto" class="left"><span class="fn nameRole">Fernando Gont</span></div>
-<div dir="auto" class="left"><span class="org">SI6 Networks</span></div>
-<div dir="auto" class="left"><span class="street-address">Evaristo Carriego 2644</span></div>
-<div dir="auto" class="left">
-<span class="postal-code">1706</span> <span class="locality">Haedo</span>
-</div>
-<div dir="auto" class="left"><span class="region">Provincia de Buenos Aires</span></div>
-<div dir="auto" class="left"><span class="country-name">Argentina</span></div>
-<div class="email">
-<span>Email:</span>
-<a href="mailto:fgont@si6networks.com" class="email">fgont@si6networks.com</a>
-</div>
-<div class="url">
-<span>URI:</span>
-<a href="https://www.si6networks.com" class="url">https://www.si6networks.com</a>
-</div>
-</address>
-</section>
-</div>
-<script>const toc = document.getElementById("toc");
-toc.querySelector("h2").addEventListener("click", e => {
-  toc.classList.toggle("active");
-});
-toc.querySelector("nav").addEventListener("click", e => {
-  toc.classList.remove("active");
-});
-</script>
+
 </body>
 </html>
