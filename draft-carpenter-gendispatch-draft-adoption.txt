@@ -6,6 +6,8 @@ Network Working Group                                     B.E. Carpenter
 Internet-Draft                                         Univ. of Auckland
 Intended status: Best Current Practice                           F. Gont
 Expires: 1 December 2020                                    SI6 Networks
+                                                           M. Richardson
+                                                Sandelman Software Works
                                                              30 May 2020
 
 
@@ -41,6 +43,21 @@ Copyright Notice
    Copyright (c) 2020 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
+
+
+
+
+
+
+
+
+
+
+Carpenter, et al.        Expires 1 December 2020                [Page 1]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
+
    This document is subject to BCP 78 and the IETF Trust's Legal
    Provisions Relating to IETF Documents (https://trustee.ietf.org/
    license-info) in effect on the date of publication of this document.
@@ -50,14 +67,6 @@ Copyright Notice
    as described in Section 4.e of the Trust Legal Provisions and are
    provided without warranty as described in the Simplified BSD License.
 
-
-
-
-Carpenter & Gont         Expires 1 December 2020                [Page 1]
-
-Internet-Draft       Process for Adoption of Drafts             May 2020
-
-
 Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
@@ -66,9 +75,9 @@ Table of Contents
    4.  Withdrawal of an Adopted Internet-Draft . . . . . . . . . . .   4
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   5
    6.  Security Considerations . . . . . . . . . . . . . . . . . . .   5
-   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   5
-   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   5
-     8.1.  Normative References  . . . . . . . . . . . . . . . . . .   5
+   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   6
+   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   6
+     8.1.  Normative References  . . . . . . . . . . . . . . . . . .   6
      8.2.  Informative References  . . . . . . . . . . . . . . . . .   6
    Appendix A.  Change Log . . . . . . . . . . . . . . . . . . . . .   6
      A.1.  Draft-00  . . . . . . . . . . . . . . . . . . . . . . . .   6
@@ -96,6 +105,15 @@ Table of Contents
    draft require WG consensus and are no longer at the authors' sole
    discretion.
 
+
+
+
+
+Carpenter, et al.        Expires 1 December 2020                [Page 2]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
+
    As a practical matter, the original authors usually continue to edit
    the document and make routine editorial decisions, but substantive
    changes must be referred to the WG and require WG rough consensus,
@@ -107,21 +125,26 @@ Table of Contents
    reach WG consensus and be submitted to the IESG for publication as an
    RFC.
 
-
-
-Carpenter & Gont         Expires 1 December 2020                [Page 2]
-
-Internet-Draft       Process for Adoption of Drafts             May 2020
-
-
 3.  Rules for Adoption of an Internet-Draft
 
-   WG Adoption of an I-D is not a required step of the IETF standards
-   process.  It is legitimate for a draft to be submitted to the IESG as
-   described in [RFC2026] without a formal adoption by a WG.  However,
-   if a WG chooses to use an adoption process, it must follow the
-   following rules and it should consider the additional guidelines in
-   [RFC7221].
+   A WG Adoption Call of an I-D is not a required step of the IETF
+   standards process.  The WG chairs decide what documents belong in the
+   WG, and can create new documents by fiat.  A simple situation would
+   be if a WG decides that an existing document should be split into two
+   pieces: There is no reason to adopt each piece, that is needless
+   bureaucracy.  A WG that decides to create a design team to solve a
+   problem has implicitely agreed to adopt the result.  To not adopt the
+   result is to say that the results of the WG mandated design team does
+   not deserve first class agenda time.  Such a design team would have
+   been created, for instance, when a WG can not decide between two
+   competing individual drafts and decides to merge them.
+
+   It is legitimate for a draft to be submitted to the IESG as described
+   in [RFC2026] without a formal adoption by a WG.
+
+   If WG Chairs choose to consult the WG about adopting a document, this
+   is the recommended process.  The WG Chairs should also consider the
+   additional guidelines in [RFC7221].
 
    *  Any participant may request the adoption of a draft, after there
       has been a period of technical discussion of the draft in the
@@ -139,6 +162,13 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
    *  This proposal should remind all participants, not just the
       authors, of their obligation to disclose relevant intellectual
       property rights (IPR) under [RFC8179].
+
+
+
+Carpenter, et al.        Expires 1 December 2020                [Page 3]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
 
    *  Participants should consider the following aspects when responding
       to the WG call for adoption:
@@ -163,13 +193,6 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
    *  An informal summary of these criteria is: Is this a problem the WG
       wants to solve in a way approximately as described in the draft?
 
-
-
-Carpenter & Gont         Expires 1 December 2020                [Page 3]
-
-Internet-Draft       Process for Adoption of Drafts             May 2020
-
-
    *  After this period, a WG Chair must, in a timely fashion, consider
       the comments and discussion in order to judge whether there is
       rough consensus to adopt the draft, and whether there is enough
@@ -193,6 +216,16 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
    decision by the relevant WG, and should follow the following
    recommendations.
 
+
+
+
+
+
+Carpenter, et al.        Expires 1 December 2020                [Page 4]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
+
    *  Upon evidence that progress on a WG draft has been stalled for a
       considerable period of time, a WG chair should evaluate the
       reasons of the apparent lack of progress.  Such reasons may may
@@ -214,17 +247,6 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
       its completion remains unlikely, the WG Chairs may, at their own
       discretion, conclude that it is time for the WG to consider the
       formal withdrawal of the WG draft.
-
-
-
-
-
-
-
-Carpenter & Gont         Expires 1 December 2020                [Page 4]
-
-Internet-Draft       Process for Adoption of Drafts             May 2020
-
 
    *  In such case, a WG Chair or WG Secretary must send a formal WG
       consensus call for withdrawal of the WG draft to the WG mailing
@@ -252,6 +274,14 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
 
    This document should not affect the security of the Internet.
 
+
+
+
+Carpenter, et al.        Expires 1 December 2020                [Page 5]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
+
 7.  Acknowledgements
 
    Useful comments were received from Michael Richardson, ...
@@ -272,15 +302,6 @@ Internet-Draft       Process for Adoption of Drafts             May 2020
               Contributors Provide to the IETF Trust", BCP 78, RFC 5378,
               DOI 10.17487/RFC5378, November 2008,
               <https://www.rfc-editor.org/info/rfc5378>.
-
-
-
-
-
-Carpenter & Gont         Expires 1 December 2020                [Page 5]
-
-Internet-Draft       Process for Adoption of Drafts             May 2020
-
 
    [RFC8179]  Bradner, S. and J. Contreras, "Intellectual Property
               Rights in IETF Technology", BCP 79, RFC 8179,
@@ -309,6 +330,14 @@ Authors' Addresses
    Auckland 1142
    New Zealand
 
+
+
+
+Carpenter, et al.        Expires 1 December 2020                [Page 6]
+
+Internet-Draft       Process for Adoption of Drafts             May 2020
+
+
    Email: brian.e.carpenter@gmail.com
 
 
@@ -323,6 +352,11 @@ Authors' Addresses
    URI:   https://www.si6networks.com
 
 
+   Michael Richardson
+   Sandelman Software Works
+
+   Email: mcr+ietf@sandelman.ca
+   URI:   https://www.sandelman.ca/mcr/
 
 
 
@@ -333,4 +367,26 @@ Authors' Addresses
 
 
 
-Carpenter & Gont         Expires 1 December 2020                [Page 6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Carpenter, et al.        Expires 1 December 2020                [Page 7]
