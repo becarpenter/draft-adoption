@@ -152,7 +152,7 @@ request the authors to post a new version using an appropriate naming convention
 
 # Withdrawal of an Adopted Internet-Draft
 
-It sometimes happens that an adopted draft does not progress to WG Last Call due to lack of interest, lack of effort, or lack of consensus. In such a case, it may be desirable for the WG to formally withdraw the WG draft, such that it is explicitly removed from the WG's agenda and returned to the authors' control.
+It sometimes happens that an adopted draft does not reach WG consensus to be submitted to the IESG for publication as an RFC due to lack of interest, lack of effort, or lack of consensus. In such a case, it may be desirable for the WG to formally withdraw the WG draft, such that it is explicitly removed from the WG's agenda and returned to the authors' control.
 
 The withdrawal of WG document should be the result of an explicit decision by the relevant WG, and should follow the following recommendations.
 
