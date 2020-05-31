@@ -182,7 +182,7 @@ This document should not affect the security of the Internet.
 
 # Acknowledgements
 
-Useful comments were received from [TBD] ...
+Useful comments were received from \[TBD\] ...
 
 --- back
 
