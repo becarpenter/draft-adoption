@@ -104,9 +104,9 @@ A WG Adoption Call of an I-D is not a required step of the IETF standards proces
 The WG chairs decide what documents belong in the WG, and can create new documents by fiat.
 A simple situation would be if a WG decides that an existing document should be split into two pieces:
 There is no reason to adopt each piece, that is needless bureaucracy.
-A WG that decides to create a design team to solve a problem has implicitely agreed to adopt the result.
+A WG that decides to create a design team to solve a problem has implicitly agreed to adopt the result.
 To not adopt the result is to say that the results of the WG mandated design team does not deserve first class agenda time.
-Such a design team would have been created, for instance, when a WG can not decide between two competing individual drafts and decides to merge them.
+Such a design team would have been created, for instance, when a WG cannot decide between two competing individual drafts and decides to merge them.
 
 It is legitimate for a draft to be submitted to the IESG as described in {{RFC2026}} without a formal adoption by a WG.
 
