@@ -73,7 +73,7 @@ normative:
 informative:
   RFC6702:
   RFC7282:
-  approval:
+  Approval:
     target: "https://datatracker.ietf.org/cgi-bin/wg/wg_init_rev_approval.cgi"
     title: "IETF Internet-Draft Initial Version Approval Tracker"
     author:
@@ -313,7 +313,7 @@ document, the Chairs often:
 
 5.  Instruct authors to post the WG I-D.
 
-6.  Approve posting {{approval}}.
+6.  Approve posting {{Approval}}.
 
 7.  Ensure that the non-working group version of the draft is marked as being replaced by this working group version.
 
@@ -354,36 +354,27 @@ There are some basic considerations when deciding to adopt a draft:
 
 Adoption has some basic pragmatics:
 
-   Rough consensus:  Working group agreement to adopt is not required
-      to be unanimous {{RFC2418}}.
+Rough consensus:
+: Working group agreement to adopt is not required to be unanimous {{RFC2418}}.
 
-   Initial, not final:  The writing quality is not required to be
-      "ready for publication", although writing quality can be a
-      problem and does need explicit attention; although not
-      mandatory, it is good practice to check whether a new working
-      group draft passes {{IDNITS}}.
+Initial, not final:
+: The writing quality is not required to be "ready for publication", although writing quality can be a problem and does need explicit attention; although not mandatory, it is good practice to check whether a new working group draft passes {{IDNITS}}.
 
-   Adoption, not approval:  The document is not required to already
-      contain a complete and/or sufficient solution, although of
-      course this can be helpful.  Equally, adoption by a working
-      group does not guarantee publication of the document as an RFC.
+Adoption, not approval:
+: The document is not required to already contain a complete and/or sufficient solution, although of course this can be helpful.  Equally, adoption by a working group does not guarantee publication of the document as an RFC.
 
-   Group, not Chairs:  Concerning the draft, the position of the
-      Working Group Chairs has no special authority, except to assess
-      working group consensus.
+Group, not Chairs:
+: Concerning the draft, the position of the Working Group Chairs has no special authority, except to assess working group consensus.
 
-REMINDER:  Once a working group adopts a draft, the document is owned
-   by the working group and can be changed however the working group
-   decides, within the bounds of IETF process and the working group
-   charter.  Absent explicit agreement, adopting a document does not
-   automatically mean that the working group has agreed to all of its
-   content.  So a working group (or its charter) might explicitly
-   dictate the basis for retaining, removing, or modifying some or
-   all of a draft's content, technical details, or the like.
-   However, in the absence of such constraints, it is worth having
-   the adoption process include a sub-process of gathering working
-   group concerns about the existing draft and flagging them
-   explicitly.
+REMINDER:
+: Once a working group adopts a draft, the document is owned by the working group and can be changed however the working group decides, within the bounds of IETF process and the working group charter.
+Absent explicit agreement, adopting a document does not automatically mean that the working group has agreed to all of its content.
+So a working group (or its charter) might explicitly dictate the basis for retaining, removing, or modifying some or
+all of a draft's content, technical details, or the like.
+However, in the absence of such constraints, it is worth having
+the adoption process include a sub-process of gathering working
+group concerns about the existing draft and flagging them
+explicitly.
 
 # Authors/Editors
 
