@@ -143,7 +143,7 @@ Internet-Draft             Adoption of Drafts             September 2020
    identifying an I-D formally under the ownership of a working group is
    by the inclusion of "ietf" in the second field of the I-D filename
    and the working group name in the third field, per Section 7 of
-   [IDGuidelines].  That is:
+   [ID-Guidelines].  That is:
 
                       draft-ietf-<wgname>-...
 
@@ -518,11 +518,11 @@ Internet-Draft             Adoption of Drafts             September 2020
    Sometimes, a working group facilitates a draft but does not own it or
    formally adopt it.  These are "individual" drafts [Individual].
 
-   As noted in Section 1.1 and reinforced in [IDGuidelines], the
+   As noted in Section 1.1 and reinforced in [ID-Guidelines], the
    convention for identifying an I-D formally under the ownership of a
    working group is by following the naming convention:
 
-                      draft-ietf-<wgname>-...
+                  draft-ietf-<wgname>-...
 
    By contrast, documents that are still under the control of their
    authors are known as "individual" I-Ds.  When these documents are
@@ -531,7 +531,7 @@ Internet-Draft             Adoption of Drafts             September 2020
    follows, where the second element is the last name of one of the
    principal authors.
 
-                   draft-<lastname>-<wgname>...
+               draft-<lastname>-<wgname>...
 
    Having the working group name following the personal name allows
    tools to associate these drafts with the working group, even though
@@ -677,7 +677,7 @@ Internet-Draft             Adoption of Drafts             September 2020
 7.  Acknowledgements
 
    This document was developed from an IETF tutorial given by A.  Farrel
-   at an IETF Working Group Chairs lunch [FarrelChairs].  L.  Anderson
+   at an IETF Working Group Chairs lunch [Farrel-Chairs].  L.  Anderson
    contributed useful comments.
 
 8.  References
@@ -708,7 +708,7 @@ Internet-Draft             Adoption of Drafts             September 2020
               Tracker", n.d., <https://datatracker.ietf.org/cgi-bin/wg/
               wg_init_rev_approval.cgi>.
 
-   [FarrelChairs]
+   [Farrel-Chairs]
               IETF, "What is a Working Group ID (and when to adopt one)
               (IETF 78 WG chairs lunch Material)", July 2010,
               <http://wiki.tools.ietf.org/group/edu/wiki/IETF78>.
@@ -716,7 +716,7 @@ Internet-Draft             Adoption of Drafts             September 2020
    [HeliSub]  M., R., "On Helicopters and Submarines", n.d.,
               <http://dl.acm.org/ft_gateway.cfm?id=966726>.
 
-   [IDGuidelines]
+   [ID-Guidelines]
               Ed., H.R., "Guidelines to Authors of Internet-Drafts",
               December 2010,
               <http://www.ietf.org/ietf-ftp/1id-guidelines.txt>.

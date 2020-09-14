@@ -79,7 +79,7 @@ informative:
     author:
       org: IETF
 
-  FarrelChairs:
+  Farrel-Chairs:
     target: "http://wiki.tools.ietf.org/group/edu/wiki/IETF78"
     title: "What is a Working Group ID (and when to adopt one) (IETF 78 WG chairs lunch Material)"
     author:
@@ -484,7 +484,7 @@ As noted in Section 1.1 and reinforced in {{ID-Guidelines}}, the
 convention for identifying an I-D formally under the ownership of a
 working group is by following the naming convention:
 
-                       draft-ietf-<wgname>-...
+                   draft-ietf-<wgname>-...
 
 By contrast, documents that are still under the control of their
 authors are known as "individual" I-Ds.  When these documents are
@@ -493,7 +493,7 @@ convention is that the document uses the naming convention as
 follows, where the second element is the last name of one of the
 principal authors.
 
-                    draft-<lastname>-<wgname>...
+                draft-<lastname>-<wgname>...
 
 Having the working group name following the personal name allows
 tools to associate these drafts with the working group, even though
@@ -602,6 +602,6 @@ Beyond the credibility of the IETF, this document raises no security concerns.
 #  Acknowledgements
 
 This document was developed from an IETF tutorial given by A. Farrel
-at an IETF Working Group Chairs lunch {{FarrelChairs}}.  L. Anderson
+at an IETF Working Group Chairs lunch {{Farrel-Chairs}}.  L. Anderson
 contributed useful comments.
 
