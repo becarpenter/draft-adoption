@@ -85,12 +85,12 @@ Table of Contents
    4.  Document History and Stability  . . . . . . . . . . . . . . .   8
    5.  Some Issues for Consideration . . . . . . . . . . . . . . . .  10
      5.1.  Individual I-Ds under WG Care . . . . . . . . . . . . . .  10
-     5.2.  WG Drafts Can Become Individual Drafts  . . . . . . . . .  10
+     5.2.  WG Drafts Can Become Individual Drafts  . . . . . . . . .  11
      5.3.  Competing Drafts  . . . . . . . . . . . . . . . . . . . .  11
    6.  Security Considerations . . . . . . . . . . . . . . . . . . .  12
-   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  12
-   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  12
-     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  12
+   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  13
+   8.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  13
+     8.1.  Normative References  . . . . . . . . . . . . . . . . . .  13
      8.2.  Informative References  . . . . . . . . . . . . . . . . .  13
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .  14
 
@@ -291,7 +291,7 @@ Internet-Draft             Adoption of Drafts             September 2020
 
    5.  Instruct authors to post the WG I-D.
 
-   6.  Approve posting [approval].
+   6.  Approve posting [Approval].
 
    7.  Ensure that the non-working group version of the draft is marked
        as being replaced by this working group version.
@@ -342,34 +342,36 @@ Internet-Draft             Adoption of Drafts             September 2020
 
    Adoption has some basic pragmatics:
 
-   Rough consensus: Working group agreement to adopt is not required to
-   be unanimous [RFC2418].
+   Rough consensus:  Working group agreement to adopt is not required to
+      be unanimous [RFC2418].
 
-   Initial, not final: The writing quality is not required to be "ready
-   for publication", although writing quality can be a problem and does
-   need explicit attention; although not mandatory, it is good practice
-   to check whether a new working group draft passes [IDNITS].
+   Initial, not final:  The writing quality is not required to be "ready
+      for publication", although writing quality can be a problem and
+      does need explicit attention; although not mandatory, it is good
+      practice to check whether a new working group draft passes
+      [IDNITS].
 
-   Adoption, not approval: The document is not required to already
-   contain a complete and/or sufficient solution, although of course
-   this can be helpful.  Equally, adoption by a working group does not
-   guarantee publication of the document as an RFC.
+   Adoption, not approval:  The document is not required to already
+      contain a complete and/or sufficient solution, although of course
+      this can be helpful.  Equally, adoption by a working group does
+      not guarantee publication of the document as an RFC.
 
-   Group, not Chairs: Concerning the draft, the position of the Working
-   Group Chairs has no special authority, except to assess working group
-   consensus.
+   Group, not Chairs:  Concerning the draft, the position of the Working
+      Group Chairs has no special authority, except to assess working
+      group consensus.
 
-   REMINDER: Once a working group adopts a draft, the document is owned
-   by the working group and can be changed however the working group
-   decides, within the bounds of IETF process and the working group
-   charter.  Absent explicit agreement, adopting a document does not
-   automatically mean that the working group has agreed to all of its
-   content.  So a working group (or its charter) might explicitly
-   dictate the basis for retaining, removing, or modifying some or all
-   of a draft's content, technical details, or the like.  However, in
-   the absence of such constraints, it is worth having the adoption
-   process include a sub-process of gathering working group concerns
-   about the existing draft and flagging them explicitly.
+   REMINDER:  Once a working group adopts a draft, the document is owned
+      by the working group and can be changed however the working group
+      decides, within the bounds of IETF process and the working group
+      charter.  Absent explicit agreement, adopting a document does not
+      automatically mean that the working group has agreed to all of its
+      content.  So a working group (or its charter) might explicitly
+      dictate the basis for retaining, removing, or modifying some or
+      all of a draft's content, technical details, or the like.
+      However, in the absence of such constraints, it is worth having
+      the adoption process include a sub-process of gathering working
+      group concerns about the existing draft and flagging them
+      explicitly.
 
 3.  Authors/Editors
 
@@ -384,8 +386,6 @@ Internet-Draft             Adoption of Drafts             September 2020
    working group detail, whereas authors tend to create the detail,
    subject to working group approval.  That is, one role is more active
    with the content, and the other is more passive.  It is a
-   responsibility of the Working Group Chairs to ensure that document
-   authors make modifications in accord with working group rough
 
 
 
@@ -394,6 +394,8 @@ Farrel, et al.            Expires 18 March 2021                 [Page 7]
 Internet-Draft             Adoption of Drafts             September 2020
 
 
+   responsibility of the Working Group Chairs to ensure that document
+   authors make modifications in accord with working group rough
    consensus.  Authors/editors are solely chosen by the Chairs -
    although the views of the working group should be considered - and
    are subject to replacement for a variety of reasons, as the Chairs
@@ -436,11 +438,9 @@ Internet-Draft             Adoption of Drafts             September 2020
    will form a design team to produce the first version of a working
    group draft.  Design teams are discussed in Section 6.5 of [RFC2418].
 
-   Work that is brought to the IETF has different levels of completeness
-   and maturity, and different timings for having achieved those levels.
-   When the IETF charters a group and includes existing material, the
-   charter can cast the role of that material in very different ways.
-   It can treat it as:
+
+
+
 
 
 
@@ -449,6 +449,12 @@ Farrel, et al.            Expires 18 March 2021                 [Page 8]
 
 Internet-Draft             Adoption of Drafts             September 2020
 
+
+   Work that is brought to the IETF has different levels of completeness
+   and maturity, and different timings for having achieved those levels.
+   When the IETF charters a group and includes existing material, the
+   charter can cast the role of that material in very different ways.
+   It can treat it as:
 
    *  no more than a set of ideas, to be used or ignored;
 
@@ -492,12 +498,6 @@ Internet-Draft             Adoption of Drafts             September 2020
    In reflecting upon the basis for adopting an existing draft and the
    way it will be used by the working group, it is important to consider
    the document's place in its life cycle, the needs of any installed
-   base, and the applicability of the draft's technology, when deciding
-   on the constraints to impose on document development.  It will all
-   depend on the constraints of the charter and the analysis of the
-   working group.
-
-
 
 
 
@@ -505,6 +505,11 @@ Farrel, et al.            Expires 18 March 2021                 [Page 9]
 
 Internet-Draft             Adoption of Drafts             September 2020
 
+
+   base, and the applicability of the draft's technology, when deciding
+   on the constraints to impose on document development.  It will all
+   depend on the constraints of the charter and the analysis of the
+   working group.
 
 5.  Some Issues for Consideration
 
@@ -542,14 +547,9 @@ Internet-Draft             Adoption of Drafts             September 2020
    that the Area Directors will want to understand why the document
    could not be adopted and owned by the working group.
 
-5.2.  WG Drafts Can Become Individual Drafts
 
-   A working group is not obligated to retain documents it has adopted.
-   Sometimes working group efforts conclude that a draft is no longer
-   appropriate for working group effort.  If a working group drops a
-   draft, then anyone is permitted to pursue it as an Individual or
-   Independent Submission, subject to the document's existing copyright
-   constraints.
+
+
 
 
 
@@ -561,6 +561,15 @@ Farrel, et al.            Expires 18 March 2021                [Page 10]
 
 Internet-Draft             Adoption of Drafts             September 2020
 
+
+5.2.  WG Drafts Can Become Individual Drafts
+
+   A working group is not obligated to retain documents it has adopted.
+   Sometimes working group efforts conclude that a draft is no longer
+   appropriate for working group effort.  If a working group drops a
+   draft, then anyone is permitted to pursue it as an Individual or
+   Independent Submission, subject to the document's existing copyright
+   constraints.
 
 5.3.  Competing Drafts
 
@@ -600,6 +609,15 @@ Internet-Draft             Adoption of Drafts             September 2020
       importance, and can facilitate a discussion about features without
       reference to specific proposals.
 
+
+
+
+
+Farrel, et al.            Expires 18 March 2021                [Page 11]
+
+Internet-Draft             Adoption of Drafts             September 2020
+
+
    *  Developing a comparison table of the proposals; this can aid
       understanding of their differences.
 
@@ -610,13 +628,6 @@ Internet-Draft             Adoption of Drafts             September 2020
 
    The problem of competing drafts can be particularly painful when it
    arises in either of two circumstances:
-
-
-
-Farrel, et al.            Expires 18 March 2021                [Page 11]
-
-Internet-Draft             Adoption of Drafts             September 2020
-
 
    *  If a second proposal appears as a new draft, just as the Chairs
       were ready to poll the working group on adoption of the draft
@@ -651,6 +662,18 @@ Internet-Draft             Adoption of Drafts             September 2020
    Beyond the credibility of the IETF, this document raises no security
    concerns.
 
+
+
+
+
+
+
+
+Farrel, et al.            Expires 18 March 2021                [Page 12]
+
+Internet-Draft             Adoption of Drafts             September 2020
+
+
 7.  Acknowledgements
 
    This document was developed from an IETF tutorial given by A.  Farrel
@@ -664,15 +687,6 @@ Internet-Draft             Adoption of Drafts             September 2020
    [RFC2026]  Bradner, S., "The Internet Standards Process -- Revision
               3", BCP 9, RFC 2026, DOI 10.17487/RFC2026, October 1996,
               <https://www.rfc-editor.org/info/rfc2026>.
-
-
-
-
-
-Farrel, et al.            Expires 18 March 2021                [Page 12]
-
-Internet-Draft             Adoption of Drafts             September 2020
-
 
    [RFC2418]  Bradner, S., "IETF Working Group Guidelines and
               Procedures", BCP 25, RFC 2418, DOI 10.17487/RFC2418,
@@ -690,7 +704,7 @@ Internet-Draft             Adoption of Drafts             September 2020
 
 8.2.  Informative References
 
-   [approval] IETF, "IETF Internet-Draft Initial Version Approval
+   [Approval] IETF, "IETF Internet-Draft Initial Version Approval
               Tracker", n.d., <https://datatracker.ietf.org/cgi-bin/wg/
               wg_init_rev_approval.cgi>.
 
@@ -707,6 +721,15 @@ Internet-Draft             Adoption of Drafts             September 2020
               December 2010,
               <http://www.ietf.org/ietf-ftp/1id-guidelines.txt>.
 
+
+
+
+
+Farrel, et al.            Expires 18 March 2021                [Page 13]
+
+Internet-Draft             Adoption of Drafts             September 2020
+
+
    [IDInfo]   Ed., W.B., "Checklist for Internet-Drafts (IDs) submitted
               for RFC publication", May 2009,
               <https://www.ietf.org/id-info/checklist.html>.
@@ -718,17 +741,6 @@ Internet-Draft             Adoption of Drafts             September 2020
               IESG, "Guidance on Area Director Sponsoring of Documents",
               March 2007, <http://www.ietf.org/iesg/statement/ad-
               sponsoring-docs.html>.
-
-
-
-
-
-
-
-Farrel, et al.            Expires 18 March 2021                [Page 13]
-
-Internet-Draft             Adoption of Drafts             September 2020
-
 
    [RFC6702]  Polk, T. and P. Saint-Andre, "Promoting Compliance with
               Intellectual Property Rights (IPR) Disclosure Rules",
@@ -766,24 +778,18 @@ Authors' Addresses
    The University of Auckland
    School of Computer Science
    PB 92019
-   Auckland 1142
-   New Zealand
-
-   Email: brian.e.carpenter@gmail.com
-
-
-
-
-
-
-
-
 
 
 
 Farrel, et al.            Expires 18 March 2021                [Page 14]
 
 Internet-Draft             Adoption of Drafts             September 2020
+
+
+   Auckland 1142
+   New Zealand
+
+   Email: brian.e.carpenter@gmail.com
 
 
    Fernando Gont
@@ -802,12 +808,6 @@ Internet-Draft             Adoption of Drafts             September 2020
 
    Email: mcr+ietf@sandelman.ca
    URI:   https://www.sandelman.ca/mcr/
-
-
-
-
-
-
 
 
 
