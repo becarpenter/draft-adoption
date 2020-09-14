@@ -100,7 +100,7 @@ informative:
     date: "December 2010"
     target: "http://www.ietf.org/ietf-ftp/1id-guidelines.txt"
 
-  IDInfo:
+  ID-Info:
     author:
       name: "Wijnen, B., Ed."
     title: "Checklist for Internet-Drafts (IDs) submitted for RFC publication"
@@ -186,7 +186,7 @@ as well as substantive changes to the document --- need to represent
 working group rough consensus.
 
 Documents under development in the IETF community are distributed as
-Internet-Drafts (I-Ds) {{RFC2026}} {{IDInfo}}.  Working groups use this
+Internet-Drafts (I-Ds) {{RFC2026}} {{ID-Info}}.  Working groups use this
 mechanism for producing their official output, per Section 7.2 of
 {{RFC2418}} and Section 6.3 of {{Tao}}.  The common convention for
 identifying an I-D formally under the ownership of a working group is
@@ -543,10 +543,12 @@ attempting a merge can produce a weaker result.  An example of this
 problem of conflicting design goals is discussed in {{Heli-Sub}},
 noting:
 
+~~~~
     "Helicopters are great, and so are submarines.  The problem is
     that if you try to build one vehicle to perform two fundamentally
     different jobs, you're going to get a vehicle that does neither
     job well."
+~~~~
 
 Various management efforts can facilitate the handling of competing
 proposals.  Some examples include:
