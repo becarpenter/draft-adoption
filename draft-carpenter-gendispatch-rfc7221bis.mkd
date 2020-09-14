@@ -90,19 +90,19 @@ informative:
     target: "http://dl.acm.org/ft_gateway.cfm?id=966726"
     title: "On Helicopters and Submarines"
     author:
-      name: "Rose, M."
+      name: "M. Rose"
     org: "ACM Queue - Instant Messaging, Vol. 1, Issue 8, Page 10"
 
   ID-Guidelines:
     author:
-      name: "Housley, R., Ed."
+      name: "R. Housley(Ed.)"
     title: "Guidelines to Authors of Internet-Drafts"
     date: "December 2010"
     target: "http://www.ietf.org/ietf-ftp/1id-guidelines.txt"
 
   ID-Info:
     author:
-      name: "Wijnen, B., Ed."
+      name: "B. Wijnen(Ed.)"
     title: "Checklist for Internet-Drafts (IDs) submitted for RFC publication"
     date: "May 2009"
     target: "https://www.ietf.org/id-info/checklist.html"
@@ -130,7 +130,7 @@ informative:
 
   Tao:
     author:
-      name: "Hoffman, P., Ed."
+      name: "P. Hoffman(Ed.)"
     title: "The Tao of IETF - A Novice's Guide to the Internet Engineering Task Force"
     date: "2012"
     target: "http://www.ietf.org/tao.html"

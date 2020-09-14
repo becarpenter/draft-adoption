@@ -713,12 +713,12 @@ Internet-Draft             Adoption of Drafts             September 2020
               (IETF 78 WG chairs lunch Material)", July 2010,
               <http://wiki.tools.ietf.org/group/edu/wiki/IETF78>.
 
-   [Heli-Sub] M., R., "On Helicopters and Submarines", n.d.,
+   [Heli-Sub] Rose, M., "On Helicopters and Submarines", n.d.,
               <http://dl.acm.org/ft_gateway.cfm?id=966726>.
 
    [ID-Guidelines]
-              Ed., H.R., "Guidelines to Authors of Internet-Drafts",
-              December 2010,
+              Housley(Ed.), R., "Guidelines to Authors of Internet-
+              Drafts", December 2010,
               <http://www.ietf.org/ietf-ftp/1id-guidelines.txt>.
 
 
@@ -730,8 +730,8 @@ Farrel, et al.            Expires 18 March 2021                [Page 13]
 Internet-Draft             Adoption of Drafts             September 2020
 
 
-   [ID-Info]  Ed., W.B., "Checklist for Internet-Drafts (IDs) submitted
-              for RFC publication", May 2009,
+   [ID-Info]  Wijnen(Ed.), B., "Checklist for Internet-Drafts (IDs)
+              submitted for RFC publication", May 2009,
               <https://www.ietf.org/id-info/checklist.html>.
 
    [IDNITS]   IETF, "IDNITS Tool", 2013,
@@ -756,8 +756,8 @@ Internet-Draft             Adoption of Drafts             September 2020
               RFC 7282, DOI 10.17487/RFC7282, June 2014,
               <https://www.rfc-editor.org/info/rfc7282>.
 
-   [Tao]      Ed., H.P., "The Tao of IETF - A Novice's Guide to the
-              Internet Engineering Task Force", 2012,
+   [Tao]      Hoffman(Ed.), P., "The Tao of IETF - A Novice's Guide to
+              the Internet Engineering Task Force", 2012,
               <http://www.ietf.org/tao.html>.
 
 Authors' Addresses
