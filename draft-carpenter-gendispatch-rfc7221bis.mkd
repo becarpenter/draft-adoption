@@ -181,8 +181,8 @@ It is meant as a guide to common practice, rather than as a formal definition of
 Working group drafts are documents that are subject to IETF working
 group revision control, with advancement for publication as an RFC
 requiring rough consensus in the working group and then in the
-broader IETF.  Creation or adoption of a draft by a working group --
-as well as substantive changes to the document -- need to represent
+broader IETF.  Creation or adoption of a draft by a working group ---
+as well as substantive changes to the document --- need to represent
 working group rough consensus.
 
 Documents under development in the IETF community are distributed as
@@ -260,7 +260,7 @@ working group is, Working Group Chairs can poll the working group to
 find out.  As with any other consensus question, the form in which it
 is asked can make a difference.  In particular, a general 'yes/no'
 question often is not as helpful as asking supporters and detractors
-of a draft -- or of the decision under consideration -- to provide
+of a draft --- or of the decision under consideration --- to provide
 their reasons, not merely their preferences.  In effect, this treats
 the matter of consensus as an ongoing discussion.  Ideally, the
 discussion can produce changes in the document or in participant
@@ -382,12 +382,13 @@ Document authors/editors are chosen by the Working Group Chairs.
 Document editors are described in Section 6.3 of {{RFC2418}}.  Authors
 and editors are described in {{RFC-Auth-Ed}}.
 
-NOTE:  In this document, the terms 'author' and 'editor' are meant interchangeably.
+NOTE:
+: In this document, the terms 'author' and 'editor' are meant interchangeably.
 Within the IETF, the distinction between an 'author' and an 'editor' is, at best, subjective.
 A simplistic rule of thumb is that editors tend to do the mechanics of incorporating working group detail, whereas  authors tend to create the detail, subject to working group approval.
 That is, one role is more active with the content, and the other is more passive.
 It is a responsibility of the Working Group Chairs to ensure that document authors make modifications in accord with  working group rough consensus.
-Authors/editors are solely chosen by the Chairs -- although the views of the working group should be considered --   and are subject to replacement for a variety of reasons, as the Chairs see fit.
+Authors/editors are solely chosen by the Chairs --- although the views of the working group should be considered ---   and are subject to replacement for a variety of reasons, as the Chairs see fit.
 
 For existing documents that are being adopted by a working group, there is a special challenge in the selection of document editors.
 Because the document has already had editors, the question "Are the same people appropriate for continuing the task?" is asked.
