@@ -377,7 +377,7 @@ Internet-Draft             Adoption of Drafts             September 2020
 
    Document authors/editors are chosen by the Working Group Chairs.
    Document editors are described in Section 6.3 of [RFC2418].  Authors
-   and editors are described in [RFCAuthEd].
+   and editors are described in [RFC-Auth-Ed].
 
    NOTE: In this document, the terms 'author' and 'editor' are meant
    interchangeably.  Within the IETF, the distinction between an
@@ -484,9 +484,9 @@ Internet-Draft             Adoption of Drafts             September 2020
    extensive operational deployment, any changes that are incompatible
    are likely to be problematic for that market and can hinder adoption
    of the changes overall.  For example, immediately after the
-   development investment is made - and especially when there has been
+   development investment is made -- and especially when there has been
    considerable initial deployment but there is still room for quite a
-   bit more - the installed and potential base might not take kindly to
+   bit more -- the installed and potential base might not take kindly to
    disruptive standards work that undermines their recent investment.
 
    Conversely, even a deployed technology with a solid base might be
@@ -742,6 +742,11 @@ Internet-Draft             Adoption of Drafts             September 2020
               March 2007, <http://www.ietf.org/iesg/statement/ad-
               sponsoring-docs.html>.
 
+   [RFC-Auth-Ed]
+              RFC Editor, "RFC Editorial Guidelines and Procedures --
+              Author Overload", 2014,
+              <http://www.rfc-editor.org/policy.html#policy.authlist>.
+
    [RFC6702]  Polk, T. and P. Saint-Andre, "Promoting Compliance with
               Intellectual Property Rights (IPR) Disclosure Rules",
               RFC 6702, DOI 10.17487/RFC6702, August 2012,
@@ -750,11 +755,6 @@ Internet-Draft             Adoption of Drafts             September 2020
    [RFC7282]  Resnick, P., "On Consensus and Humming in the IETF",
               RFC 7282, DOI 10.17487/RFC7282, June 2014,
               <https://www.rfc-editor.org/info/rfc7282>.
-
-   [RFCAuthEd]
-              RFC Editor, "RFC Editorial Guidelines and Procedures --
-              Author Overload", 2014,
-              <http://www.rfc-editor.org/policy.html#policy.authlist>.
 
    [Tao]      Ed., H.P., "The Tao of IETF - A Novice's Guide to the
               Internet Engineering Task Force", 2012,

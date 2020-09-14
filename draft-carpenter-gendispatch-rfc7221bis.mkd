@@ -93,7 +93,7 @@ informative:
       name: "Rose, M."
     org: "ACM Queue - Instant Messaging, Vol. 1, Issue 8, Page 10"
 
-  IDGuidelines:
+  ID-Guidelines:
     author:
       name: "Housley, R., Ed."
     title: "Guidelines to Authors of Internet-Drafts"
@@ -121,7 +121,7 @@ informative:
     date: "March 2007"
     target: "http://www.ietf.org/iesg/statement/ad-sponsoring-docs.html"
 
-  RFCAuthEd:
+  RFC-Auth-Ed:
     title: "RFC Editorial Guidelines and Procedures -- Author Overload"
     author:
       org: "RFC Editor"
@@ -192,7 +192,7 @@ mechanism for producing their official output, per Section 7.2 of
 identifying an I-D formally under the ownership of a working group is
 by the inclusion of "ietf" in the second field of the I-D filename
 and the working group name in the third field, per Section 7 of
-{{IDGuidelines}}.  That is:
+{{ID-Guidelines}}.  That is:
 
                        draft-ietf-<wgname>-...
 
@@ -380,7 +380,7 @@ explicitly.
 
 Document authors/editors are chosen by the Working Group Chairs.
 Document editors are described in Section 6.3 of {{RFC2418}}.  Authors
-and editors are described in {{RFCAuthEd}}.
+and editors are described in {{RFC-Auth-Ed}}.
 
 NOTE:  In this document, the terms 'author' and 'editor' are meant interchangeably.
 Within the IETF, the distinction between an 'author' and an 'editor' is, at best, subjective.
@@ -454,9 +454,9 @@ However, when the technology is already part of a mature and
 extensive operational deployment, any changes that are incompatible
 are likely to be problematic for that market and can hinder adoption
 of the changes overall.  For example, immediately after the
-development investment is made -- and especially when there has been
+development investment is made --- and especially when there has been
 considerable initial deployment but there is still room for quite a
-bit more -- the installed and potential base might not take kindly to
+bit more --- the installed and potential base might not take kindly to
 disruptive standards work that undermines their recent investment.
 
 Conversely, even a deployed technology with a solid base might be
@@ -480,7 +480,7 @@ working group.
 Sometimes, a working group facilitates a draft but does not own it or
 formally adopt it.  These are "individual" drafts {{Individual}}.
 
-As noted in Section 1.1 and reinforced in {{IDGuidelines}}, the
+As noted in Section 1.1 and reinforced in {{ID-Guidelines}}, the
 convention for identifying an I-D formally under the ownership of a
 working group is by following the naming convention:
 
