@@ -1,4 +1,4 @@
-DRAFT:=draft-carpenter-gendispatch-draft-adoption
+DRAFT:=draft-carpenter-gendispatch-rfc7221bis
 VERSION:=$(shell ./getver ${DRAFT}.mkd )
 
 ${DRAFT}-${VERSION}.txt: ${DRAFT}.txt
