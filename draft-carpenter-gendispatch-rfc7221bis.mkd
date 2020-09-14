@@ -71,34 +71,38 @@ normative:
   RFC8179:
 
 informative:
-  RFC2418:
   RFC6702:
   RFC7282:
   approval:
     target: "https://datatracker.ietf.org/cgi-bin/wg/wg_init_rev_approval.cgi"
     title: "IETF Internet-Draft Initial Version Approval Tracker"
-    org: IETF
+    author:
+      org: IETF
 
   FarrelChairs:
     target: "http://wiki.tools.ietf.org/group/edu/wiki/IETF78"
     title: "What is a Working Group ID (and when to adopt one) (IETF 78 WG chairs lunch Material)"
-    org: IETF
+    author:
+      org: IETF
     date: "July 2010"
 
   HeliSub:
     target: "http://dl.acm.org/ft_gateway.cfm?id=966726"
     title: "On Helicopters and Submarines"
-    author: "Rose, M."
+    author:
+      name: "Rose, M."
     org: "ACM Queue - Instant Messaging, Vol. 1, Issue 8, Page 10"
 
-  ID_Guidelines:
-    author: "Housley, R., Ed."
+  IDGuidelines:
+    author:
+      name: "Housley, R., Ed."
     title: "Guidelines to Authors of Internet-Drafts"
     date: "December 2010"
     target: "http://www.ietf.org/ietf-ftp/1id-guidelines.txt"
 
-  ID_info:
-    author: "Wijnen, B., Ed."
+  IDInfo:
+    author:
+      name: "Wijnen, B., Ed."
     title: "Checklist for Internet-Drafts (IDs) submitted for RFC publication"
     date: "May 2009"
     target: "https://www.ietf.org/id-info/checklist.html"
@@ -106,23 +110,27 @@ informative:
   IDNITS:
     title: "IDNITS Tool"
     date: "2013"
-    author: "IETF"
+    author:
+      org: "IETF"
     target: "https://tools.ietf.org/tools/idnits/"
 
   Individual:
-    author: "IESG"
+    author:
+      org: "IESG"
     title: "Guidance on Area Director Sponsoring of Documents"
     date: "March 2007"
     target: "http://www.ietf.org/iesg/statement/ad-sponsoring-docs.html"
 
   RFCAuthEd:
-    author: "RFC Editor"
-    title: ""RFC Editorial Guidelines and Procedures -- Author Overload"
+    title: "RFC Editorial Guidelines and Procedures -- Author Overload"
+    author:
+      org: "RFC Editor"
     date: "2014"
     target: "http://www.rfc-editor.org/policy.html#policy.authlist"
 
   Tao:
-    author: "Hoffman, P., Ed."
+    author:
+      name: "Hoffman, P., Ed."
     title: "The Tao of IETF - A Novice's Guide to the Internet Engineering Task Force"
     date: "2012"
     target: "http://www.ietf.org/tao.html"
@@ -179,13 +187,13 @@ that it targets for publication.
    working group rough consensus.
 
    Documents under development in the IETF community are distributed as
-   Internet-Drafts (I-Ds) {{RFC2026}} {{ID-Info}}.  Working groups use this
+   Internet-Drafts (I-Ds) {{RFC2026}} {{IDInfo}}.  Working groups use this
    mechanism for producing their official output, per Section 7.2 of
    {{RFC2418}} and Section 6.3 of {{Tao}}.  The common convention for
    identifying an I-D formally under the ownership of a working group is
    by the inclusion of "ietf" in the second field of the I-D filename
    and the working group name in the third field, per Section 7 of
-   [ID-Guidelines].  That is:
+   {{IDGuidelines}}.  That is:
 
                           draft-ietf-<wgname>-...
 
@@ -221,8 +229,8 @@ that it targets for publication.
    Other than for selection of document authors/editors, as discussed in
    Section 3, working group decision-making about document management is
    subject to normal IETF rough consensus rules.  Useful descriptions of
-   this process for a working group are in Section 3.3 of [RFC2418] and
-   Section 4.2 of [Tao].  Discussion of the nature of rough consensus
+   this process for a working group are in Section 3.3 of {{RFC2418}} and
+   Section 4.2 of {{Tao}}.  Discussion of the nature of rough consensus
    can be found in {{RFC7282}}.
 
    In terms of the IETF's formal rough consensus processes, the working
@@ -301,7 +309,7 @@ that it targets for publication.
        current owners and the IETF, including a formal agreement.)
 
    2.  Check for known IPR that needs to be disclosed, using some
-       technique like those described in [RFC6702].
+       technique like those described in {{RFC6702}}.
 
    3.  Obtain working group rough consensus.
 
@@ -353,13 +361,13 @@ that it targets for publication.
    Adoption has some basic pragmatics:
 
       Rough consensus:  Working group agreement to adopt is not required
-         to be unanimous [RFC2418].
+         to be unanimous {{RFC2418}}.
 
       Initial, not final:  The writing quality is not required to be
          "ready for publication", although writing quality can be a
          problem and does need explicit attention; although not
          mandatory, it is good practice to check whether a new working
-         group draft passes [IDNITS].
+         group draft passes {{IDNITS}}.
 
       Adoption, not approval:  The document is not required to already
          contain a complete and/or sufficient solution, although of
@@ -386,8 +394,8 @@ that it targets for publication.
 # Authors/Editors
 
    Document authors/editors are chosen by the Working Group Chairs.
-   Document editors are described in Section 6.3 of [RFC2418].  Authors
-   and editors are described in [RFC-Auth-Ed].
+   Document editors are described in Section 6.3 of {{RFC2418}}.  Authors
+   and editors are described in {{RFCAuthEd}}.
 
    NOTE:  In this document, the terms 'author' and 'editor' are meant
       interchangeably.  Within the IETF, the distinction between an
@@ -438,7 +446,7 @@ that it targets for publication.
    Working Group Chairs will need to appoint authors/editors before any
    work can progress.  Note that, from time to time, a working group
    will form a design team to produce the first version of a working
-   group draft.  Design teams are discussed in Section 6.5 of [RFC2418].
+   group draft.  Design teams are discussed in Section 6.5 of {{RFC2418}}.
 
    Work that is brought to the IETF has different levels of completeness
    and maturity, and different timings for having achieved those levels.
@@ -498,9 +506,9 @@ that it targets for publication.
 ##  Individual I-Ds under WG Care
 
    Sometimes, a working group facilitates a draft but does not own it or
-   formally adopt it.  These are "individual" drafts [Individual].
+   formally adopt it.  These are "individual" drafts {{Individual}}.
 
-   As noted in Section 1.1 and reinforced in [ID-Guidelines], the
+   As noted in Section 1.1 and reinforced in {{IDGuidelines}}, the
    convention for identifying an I-D formally under the ownership of a
    working group is by following the naming convention:
 
@@ -559,7 +567,7 @@ that it targets for publication.
 
    On the other hand, some differences cannot be resolved, and
    attempting a merge can produce a weaker result.  An example of this
-   problem of conflicting design goals is discussed in [Heli-Sub],
+   problem of conflicting design goals is discussed in {{HeliSub}},
    noting:
 
       "Helicopters are great, and so are submarines.  The problem is
