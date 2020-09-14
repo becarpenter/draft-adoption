@@ -86,7 +86,7 @@ informative:
       org: IETF
     date: "July 2010"
 
-  HeliSub:
+  Heli-Sub:
     target: "http://dl.acm.org/ft_gateway.cfm?id=966726"
     title: "On Helicopters and Submarines"
     author:
@@ -539,13 +539,13 @@ involved in all the discussions.
 
 On the other hand, some differences cannot be resolved, and
 attempting a merge can produce a weaker result.  An example of this
-problem of conflicting design goals is discussed in {{HeliSub}},
+problem of conflicting design goals is discussed in {{Heli-Sub}},
 noting:
 
-   "Helicopters are great, and so are submarines.  The problem is
-   that if you try to build one vehicle to perform two fundamentally
-   different jobs, you're going to get a vehicle that does neither
-   job well."
+    "Helicopters are great, and so are submarines.  The problem is
+    that if you try to build one vehicle to perform two fundamentally
+    different jobs, you're going to get a vehicle that does neither
+    job well."
 
 Various management efforts can facilitate the handling of competing
 proposals.  Some examples include:
