@@ -592,13 +592,13 @@ Internet-Draft             Adoption of Drafts             September 2020
 
    On the other hand, some differences cannot be resolved, and
    attempting a merge can produce a weaker result.  An example of this
-   problem of conflicting design goals is discussed in [HeliSub],
+   problem of conflicting design goals is discussed in [Heli-Sub],
    noting:
 
-   "Helicopters are great, and so are submarines.  The problem is that
-   if you try to build one vehicle to perform two fundamentally
-   different jobs, you're going to get a vehicle that does neither job
-   well."
+   "Helicopters are great, and so are submarines.  The problem is
+   that if you try to build one vehicle to perform two fundamentally
+   different jobs, you're going to get a vehicle that does neither
+   job well."
 
    Various management efforts can facilitate the handling of competing
    proposals.  Some examples include:
@@ -713,7 +713,7 @@ Internet-Draft             Adoption of Drafts             September 2020
               (IETF 78 WG chairs lunch Material)", July 2010,
               <http://wiki.tools.ietf.org/group/edu/wiki/IETF78>.
 
-   [HeliSub]  M., R., "On Helicopters and Submarines", n.d.,
+   [Heli-Sub] M., R., "On Helicopters and Submarines", n.d.,
               <http://dl.acm.org/ft_gateway.cfm?id=966726>.
 
    [ID-Guidelines]
