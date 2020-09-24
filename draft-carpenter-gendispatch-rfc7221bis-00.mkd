@@ -1,7 +1,7 @@
 ---
 title: Handling and Adoption of Internet-Drafts by IETF Working Groups
 abbrev: Handling and Adoption of I-Ds by WGs              
-docname: draft-carpenter-gendispatch-rfc7221bis-01
+docname: draft-carpenter-gendispatch-rfc7221bis-00
 date: 2020
 category: info
 
@@ -12,7 +12,7 @@ area: General
 wg: Network Working Group
 kw: Internet-Draft
 
-obsoletes: 7221
+#obsoletes: 7221
 
 pi:
   toc: yes
@@ -150,6 +150,8 @@ might be a blank sheet, wholly created by the working group, or it
 might represent any level of maturity in between.  This document
 discusses how a working group typically handles the formal documents
 that it targets for publication.
+
+This -00 draft is essentially identical to RFC7221 as a basis for comparison.
 
 --- middle
 
@@ -296,67 +298,24 @@ are charged with running the process:
 
 #  Adoption Sequence
 
-## Consequences of WG Adoption of an Internet-Draft
-
-After a draft has been formally adopted by a WG, its original authors no longer have formal change control of the text.  In addition to the normal consequence of posting a draft, i.e., that it becomes an IETF Contribution under {{RFC5378}}, all future substantive changes to the
-draft require WG consensus and are no longer at the authors' sole discretion. 
-
-As a practical matter, the original authors usually continue to edit the document and make routine editorial decisions, but substantive changes must be referred to the WG and require WG rough consensus, consistently with {{RFC2418}}.  It is also possible that new authors or editors will join the draft, or that previous authors may withdraw.
-
-Adoption represents a commitment that the WG will spend time and effort on the draft, but it does not guarantee that the draft will reach WG consensus and be submitted to the IESG for publication as an RFC.
-
-## Relationship to Formal IETF Rules
-
-A WG Adoption Call of an I-D is not a required step of the IETF
-standards process.  The WG chairs decide what documents belong in the
-WG, and can create new documents by fiat.  A simple situation would
-be if a WG decides that an existing document should be split into two
-pieces: there is no reason to adopt each piece, that is needless
-bureaucracy. Similarly, if there is WG consensus to merge two
-drafts into one, a complete adoption procedure may be pointless.
-However, a WG that decides to create a design team to solve a
-problem has not agreed to adopt the result automatically.  The design
-team's output has the same status as any other draft, even if it has
-a high chance of being adopted. 
-
-It is legitimate for a draft to be submitted to the IESG as described
-in {{RFC2026}} without a formal adoption by a WG. Clearly this should
-only happen when the WG Chairs are already satisfied that there is
-strong consensus to do so.
-
 ##  Common Steps
 
-Any participant may request the adoption of a draft, after there
-has been a period of technical discussion of the draft in the
-relevant WG.
-
-WG Chairs have discretion about when to issue a call for
-adoption, but they should do so regardless of their own opinions,
-when the WG discussion shows that there is clear interest in the
-draft in question.
-
 When there is interest in adopting a document as a new working group
-document, the Chairs (or a WG Secretary, if there is one) typically:
+document, the Chairs often:
 
-1.  Remind current draft authors that they are transferring change control for the document to the IETF.
+1.  Remind current draft owners that they are transferring change control for the document to the IETF.
     (This is a particularly
     significant point for a document covered by proprietary
     interests, because it typically entails a negotiation between the
     current owners and the IETF, including a formal agreement.)
 
-2.  Check for known IPR that needs to be disclosed under {{RFC8179}}, using some technique like those described in {{RFC6702}}. This might be combined with the following action.
+2.  Check for known IPR that needs to be disclosed, using some technique like those described in {{RFC6702}}.
 
-3.  Obtain working group rough consensus. Typically the Chairs or WG Secretary will send a call for adoption of a draft to the WG mailing list with at least two weeks time to respond.
+3.  Obtain working group rough consensus.
 
-    * After this period, a WG Chair should, in a timely fashion, consider
-      the comments and discussion in order to judge whether there is
-      rough consensus to adopt the draft, and whether there is enough
-      interest in the work that its completion is likely. The result
-      should be announced to the WG.
+4.  Choose document editors.
 
-4.  Choose document editors. As noted above, these might or might not be the existing authors.
-
-5.  Request authors to post the WG I-D according to the naming convention described above.
+5.  Instruct authors to post the WG I-D.
 
 6.  Approve posting {{Approval}}.
 
@@ -369,26 +328,18 @@ document, the Chairs (or a WG Secretary, if there is one) typically:
 No formal specification for working group 'adoption' of a draft
 exists; the current document is meant to provide a description of
 common activities for this, but again note that it is not normative.
-Participants responding to a WG call for adoption should consider
-these points.
 
 There are some basic considerations when deciding to adopt a draft:
 
 *  Is there a charter milestone that explicitly calls for such a
-   document? 
+   document?
 
 *  Is the topic of the I-D within scope for the working group?
 
-*  If not already in scope, is a simple modification to the charter
-   feasible and warranted?
-
 *  Is the purpose of the draft sufficiently clear?
 
-*  Is the proposal useful?
-
 *  Does the document provide an acceptable platform for continued
-   effort by the working group? In particular, is the quality of
-   writing sufficient to serve as the basis further work?
+   effort by the working group?
 
 *  What are the process or technical objections to adoption of the
    draft?
@@ -398,15 +349,12 @@ There are some basic considerations when deciding to adopt a draft:
 *  Does the intended status of the document seem reasonable to the
    working group?
 
-*  Does the draft carry known intellectual property rights issues?
-   If so, are the IPR disclosures acceptable?
+*  If not already in scope, is a simple modification to the charter
+   feasible and warranted?
 
-*  Is the work in conflict with work elsewhere in the IETF?
+*  Does the draft carry known intellectual property rights issues?
 
 *  Is there strong working group support for working on the draft?
-
-An informal summary of these questions is: Is this a problem the WG
-wants to solve in a way approximately as described in the draft?
 
 Adoption has some basic pragmatics:
 
@@ -566,57 +514,14 @@ This is a rare situation, and Working Group Chairs can be assured
 that the Area Directors will want to understand why the document
 could not be adopted and owned by the working group.
 
-## Withdrawal of an Adopted Internet-Draft
+##  WG Drafts Can Become Individual Drafts
 
-It sometimes happens that an adopted draft does not reach WG
-consensus to be submitted to the IESG for publication as an RFC due
-to lack of interest, lack of effort, or lack of agreement.  In such a
-case, it may be desirable for the WG to formally withdraw the WG
-draft, such that it is explicitly removed from the WG's agenda. If a
-working group drops a draft, then anyone (most likely the original
-authors) can pursue it as an Individual or Independent Submission,
-subject to the document's existing copyright constraints.
-
-The withdrawal of a WG document should be the result of an explicit
-decision by the relevant WG, and the Chairs should consider the following
-recommendations.
-
-*  Upon evidence that progress on a WG draft has been stalled for a
-   considerable period of time, a WG chair should evaluate the
-   reasons of the apparent lack of progress.  Such reasons may may
-   include lack of interest, lack of effort, or lack of consensus.
-
-*  When progress on a document has been stalled for a considerable
-   period of time, a WG chair, in consultation with the WG draft
-   authors and editors, should attempt to resume progress by taking
-   appropriate actions that will normally depend on the nature of the
-   lack of progress.  For example, a WG draft that has been stalled
-   due to apparent lack of interest may benefit from a call for a
-   number of volunters to produce detailed reviews of the WG draft.
-   Similarly, a WG draft that has been stalled due to lack of effort
-   by its authors/editors may benefit from the incorporation of new
-   WG draft editors or the replacement of some of the existing ones.
-
-*  If after succesive failed attempts to make progress on a WG draft
-   its completion remains unlikely, the WG Chairs may, at their own
-   discretion, conclude that it is time for the WG to consider the
-   formal withdrawal of the WG draft.
-
-*  In such case, a WG Chair or WG Secretary would send a formal WG
-   consensus call for withdrawal of the WG draft to the WG mailing
-   list with at least two weeks time to respond, explaining the
-   events that have triggered the aforementioned consensus call.
-
-*  After this period, a WG Chair should, in a timely fashion, consider
-   the comments and discussion in order to judge whether there is any
-   concrete evidence that completion of the work may now be feasible,
-   or whether completion of the work remains unlikely.
-
-*  If further progress on the document remains unlikely, the WG Chair
-   will announce the result of the consensus call and the formal
-   withdrawal of the WG document.  This will result in the document
-   being removed from the WG's agenda and returned to the authors'
-   control.
+A working group is not obligated to retain documents it has adopted.
+Sometimes working group efforts conclude that a draft is no longer
+appropriate for working group effort.  If a working group drops a
+draft, then anyone is permitted to pursue it as an Individual or
+Independent Submission, subject to the document's existing copyright
+constraints.
 
 ##  Competing Drafts
 
@@ -697,8 +602,6 @@ arises in either of two circumstances:
    competing solution?  Or shall the new draft be rejected and not
    adopted by the working group?
 
-
-
 #  Security Considerations
 
 Beyond the credibility of the IETF, this document raises no security concerns.
@@ -707,6 +610,5 @@ Beyond the credibility of the IETF, this document raises no security concerns.
 
 This document was developed from an IETF tutorial given by A. Farrel
 at an IETF Working Group Chairs lunch {{Farrel-Chairs}}.  L. Anderson
-contributed useful comments. It was updated in September 2020 to add
-more detail on the adoption process.
+contributed useful comments.
 
