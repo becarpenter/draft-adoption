@@ -6,13 +6,13 @@ Network Working Group                                          A. Farrel
 Internet-Draft                                          Juniper Networks
 Obsoletes: 7221 (if approved)                                 D. Crocker
 Intended status: Informational               Brandenburg InternetWorking
-Expires: 27 March 2021                                    B.E. Carpenter
+Expires: 2 May 2021                                       B.E. Carpenter
                                                        Univ. of Auckland
                                                                  F. Gont
                                                             SI6 Networks
                                                            M. Richardson
                                                 Sandelman Software Works
-                                                       23 September 2020
+                                                         29 October 2020
 
 
     Handling and Adoption of Internet-Drafts by IETF Working Groups
@@ -47,15 +47,15 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 March 2021.
+   This Internet-Draft will expire on 2 May 2021.
 
 
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 1]
+Farrel, et al.             Expires 2 May 2021                   [Page 1]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
 Copyright Notice
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 2]
+Farrel, et al.             Expires 2 May 2021                   [Page 2]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    only to the IETF and does not cover IRTF groups, where practices vary
@@ -165,9 +165,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 3]
+Farrel, et al.             Expires 2 May 2021                   [Page 3]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    Responsibility for direct revision of a working group I-D is assigned
@@ -221,9 +221,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 4]
+Farrel, et al.             Expires 2 May 2021                   [Page 4]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    In general, when it is not completely obvious what the opinion of the
@@ -277,9 +277,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 5]
+Farrel, et al.             Expires 2 May 2021                   [Page 5]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
 2.1.  Consequences of WG Adoption of an Internet-Draft
@@ -333,9 +333,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 6]
+Farrel, et al.             Expires 2 May 2021                   [Page 6]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    WG Chairs have discretion about when to issue a call for adoption,
@@ -389,9 +389,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 7]
+Farrel, et al.             Expires 2 May 2021                   [Page 7]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
 2.4.  Criteria for Adoption
@@ -445,9 +445,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 8]
+Farrel, et al.             Expires 2 May 2021                   [Page 8]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    Initial, not final:  The writing quality is not required to be "ready
@@ -501,9 +501,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                 [Page 9]
+Farrel, et al.             Expires 2 May 2021                   [Page 9]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    For existing documents that are being adopted by a working group,
@@ -557,9 +557,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 10]
+Farrel, et al.             Expires 2 May 2021                  [Page 10]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    *  a solid specification that merely needs review, refinement, and
@@ -613,9 +613,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 11]
+Farrel, et al.             Expires 2 May 2021                  [Page 11]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    As noted in Section 1.1 and reinforced in [ID-Guidelines], the
@@ -669,9 +669,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 12]
+Farrel, et al.             Expires 2 May 2021                  [Page 12]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    *  When progress on a document has been stalled for a considerable
@@ -725,9 +725,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 13]
+Farrel, et al.             Expires 2 May 2021                  [Page 13]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    It is appealing to ask authors of competing proposals to find a way
@@ -781,9 +781,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 14]
+Farrel, et al.             Expires 2 May 2021                  [Page 14]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
       their opinion: shall the working group adopt one document as a
@@ -837,9 +837,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 15]
+Farrel, et al.             Expires 2 May 2021                  [Page 15]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    [RFC8179]  Bradner, S. and J. Contreras, "Intellectual Property
@@ -893,9 +893,9 @@ Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 16]
+Farrel, et al.             Expires 2 May 2021                  [Page 16]
 
-Internet-Draft    Handling and Adoption of I-Ds by WGs    September 2020
+Internet-Draft    Handling and Adoption of I-Ds by WGs      October 2020
 
 
    [RFC7282]  Resnick, P., "On Consensus and Humming in the IETF",
@@ -949,4 +949,4 @@ Authors' Addresses
 
 
 
-Farrel, et al.            Expires 27 March 2021                [Page 17]
+Farrel, et al.             Expires 2 May 2021                  [Page 17]
