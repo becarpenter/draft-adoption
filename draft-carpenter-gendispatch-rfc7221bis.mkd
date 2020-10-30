@@ -23,7 +23,7 @@ author:
       -
         ins: A. Farrel
         name: Adrian Farrel
-        org: Juniper Networks
+        org: Old Dog Consulting
         email: adrian@olddog.co.uk
 
       -
