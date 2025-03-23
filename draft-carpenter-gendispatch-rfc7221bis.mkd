@@ -1,8 +1,8 @@
 ---
 title: Handling and Adoption of Internet-Drafts by IETF Working Groups
-abbrev: Handling and Adoption of I-Ds by WGs              
+abbrev: Handling and Adoption of I-Ds by WGs
 docname: draft-carpenter-gendispatch-rfc7221bis-02
-date: 2020
+date: 2025
 category: info
 
 stand_alone: true
@@ -299,7 +299,7 @@ are charged with running the process:
 ## Consequences of WG Adoption of an Internet-Draft
 
 After a draft has been formally adopted by a WG, its original authors no longer have formal change control of the text.  In addition to the normal consequence of posting a draft, i.e., that it becomes an IETF Contribution under {{RFC5378}}, all future substantive changes to the
-draft require WG consensus and are no longer at the authors' sole discretion. 
+draft require WG consensus and are no longer at the authors' sole discretion.
 
 As a practical matter, the original authors usually continue to edit the document and make routine editorial decisions, but substantive changes must be referred to the WG and require WG rough consensus, consistently with {{RFC2418}}.  It is also possible that new authors or editors will join the draft, or that previous authors may withdraw.
 
@@ -317,7 +317,7 @@ drafts into one, a complete adoption procedure may be pointless.
 However, a WG that decides to create a design team to solve a
 problem has not agreed to adopt the result automatically.  The design
 team's output has the same status as any other draft, even if it has
-a high chance of being adopted. 
+a high chance of being adopted.
 
 It is legitimate for a draft to be submitted to the IESG as described
 in {{RFC2026}} without a formal adoption by a WG. Clearly this should
@@ -375,7 +375,7 @@ these points.
 There are some basic considerations when deciding to adopt a draft:
 
 *  Is there a charter milestone that explicitly calls for such a
-   document? 
+   document?
 
 *  Is the topic of the I-D within scope for the working group?
 
